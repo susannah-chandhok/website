@@ -1,0 +1,72 @@
+---
+title: "My first RMarkdown File"
+author: "Susannah"
+date: 2015-07-23T21:13:14-05:00
+categories: ["R"]
+tags: ["R Markdown"]
+---
+# Testing
+This is a test of my first website RMarkdown file. 
+
+# Problem 1.1
+**Long-to-Wide Data format translation**
+
+## Download the data 
+
+- Load the `rvest` web scraping package. 
+```{r message=FALSE, warning=FALSE}
+# install.packages('rvest')
+library(rvest)
+```
+
+- Download the [SOCR Parkinson's Disease data](http://wiki.socr.umich.edu/index.php/SOCR_Data_PD_BiomedBigMetadata)
+- Save the downloaded data as a data frame named **pd_data**. 
+```{r}
+wiki_url <- read_html('http://wiki.socr.umich.edu/index.php/SOCR_Data_PD_BiomedBigMetadata')
+
+pd_data <- html_table(html_nodes(wiki_url, "table")[[1]])
+```
+
+- Check data to make sure it downloaded correctly. 
+```{r}
+head(pd_data)
+```
+
+## Choose 3 variables
+
+I will make a short data frame using the following 3 variables, in addition to the case and time variables, for ease of handling:
+
+- *Case* refers to case subject identifier 
+- *Time* refers to visit time with four time-points: (baseline (0), 6, 12, and 18 month follow-ups).
+- *L_caudate_volume* refers to the the 3D volume/size of the left caudate 
+- *Weight* refers to weight in kg
+- *Age* refers to age in years
+
+```{r}
+# create short data frame with relevant variables for ease of handling
+pd_data_short <- data.frame(pd_data$Cases,
+                            pd_data$Time,
+                            pd_data$L_caudate_Volume, 
+                            pd_data$Weight, 
+                            pd_data$Age)
+```
+
+- Take out 'pd_data.' from the column names.
+```{r}
+names(pd_data_short) = sub("pd_data.","",names(pd_data_short))   
+```
+
+## Translate data from long-to-wide format
+
+- I used the `reshape` function in the `stats` package to translate the data from long-to-wide. 
+- After transforming from long to wide, now there is a column for each case of *L_caudate_volume*, *Weight*, and *Age* at each measurement visit occasion, corresponding to baseline/0, 6 months, 12 months, and 18 months. 
+
+```{r}
+library(stats)
+
+pd_data_wide <- reshape(pd_data_short, 
+                        idvar = "Cases", 
+                        timevar = "Time", 
+                        direction = "wide")
+head(pd_data_wide)
+```
