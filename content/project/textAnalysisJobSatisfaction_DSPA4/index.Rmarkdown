@@ -6,6 +6,7 @@ date: 2018-10-01
 author: "<h3>Susannah</h3>"	
 output:
   html_document:
+    keep_md: true
     theme: cerulean
     highlight: monochrome
 # Featured image
