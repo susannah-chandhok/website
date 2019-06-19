@@ -18,12 +18,14 @@ organizations:
   url: "https://lsa.umich.edu/psych"
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a graduate researcher and Ph.D. student at the University of Michigan in Ann Arbor.
+bio: I am a Ph.D. student in social psychology at the University of Michigan in Ann Arbor.
 
 # Interests
 interests: 
 - social media
+- technology
 - well-being 
+- social connection
 - emotional regulation
 - self-control
 
