@@ -1,0 +1,11 @@
+---
+title: "My first post"
+author: "Susannah"
+date: 2015-07-23T21:13:14-05:00
+categories: ["R"]
+tags: ["R Markdown"]
+---
+# Welcome! 
+Thanks for checking out my website and reading my first post. There will be more soon! 
+
+![working](https://66.media.tumblr.com/tumblr_m7um2qVM6h1rofpj6o1_500.jpg)
