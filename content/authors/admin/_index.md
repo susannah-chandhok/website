@@ -18,7 +18,7 @@ organizations:
   url: "https://lsa.umich.edu/psych"
 
 # Short bio (displayed in user profile at end of posts)
-bio: As a graduate researcher and Ph.D. student at the University of Michigan in Ann Arbor, I study social behavior in the digital age.
+bio: I am a graduate researcher and Ph.D. student at the University of Michigan in Ann Arbor.
 
 # Interests
 interests: 
@@ -70,4 +70,4 @@ user_groups:
 - Visitors
 ---
 
-NEW TEST I am a Ph.D. student at the University of Michigan in Ann Arbor studying social behavior in the digital age. My primary advisor is [Dr. Ethan Kross](http://selfcontrol.psych.lsa.umich.edu). Broadly, I work with mixed methods to identify psychosocial forces influencing emotional expression and interpersonal communication on the Internet and on social media, with a focus on distinguishing these forces from those shaping in-person behavior.
+I am a Ph.D. student at the University of Michigan in Ann Arbor studying social behavior in the digital age. My primary advisor is [Dr. Ethan Kross](http://selfcontrol.psych.lsa.umich.edu). Broadly, I study the psychosocial forces influencing emotional expression and interpersonal communication on the Internet and on social media, with a focus on distinguishing these forces from those shaping in-person behavior.
