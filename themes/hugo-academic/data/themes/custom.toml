@@ -18,5 +18,5 @@ menu_title = "#fff"
 
 # Home sections
 
-home_section_odd = "rgb(232, 244, 249)" #verylightblue
-home_section_even = "rgb(140, 188, 208)" #skyblue
+home_section_odd = "rgb(232, 244, 249)"
+home_section_even = "rgb(140, 188, 208)" 
