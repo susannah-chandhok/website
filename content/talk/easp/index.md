@@ -13,12 +13,12 @@ math: true
 projects:
 - internal-project
 publishDate: "2017-01-01T00:00:00Z"
-slides: example
+slides: 
 summary: Talk presented at the 2019 Tech and Relationships Conference in Annecy, France 
 tags: []
 title: Interpersonal Confrontation on Social Media as a Function of Psychological Distance
 url_code: ""
-url_pdf: ""
+url_pdf: "easp_presentation.pdf"
 url_slides: ""
 url_video: ""
 ---
