@@ -6,4 +6,6 @@ categories: ["R"]
 tags: ["R Markdown"]
 ---
 # Welcome! 
-Hello and welcome to my website! This is my first post. 
+Thanks for checking out my website and reading my first post. There will be more soon! 
+
+![working](https://66.media.tumblr.com/tumblr_m7um2qVM6h1rofpj6o1_500.jpg)
