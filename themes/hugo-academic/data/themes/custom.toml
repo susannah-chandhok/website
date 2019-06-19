@@ -8,16 +8,16 @@ light = true
 
 # Primary
 
-primary = "#0cc912"
+primary = "#1370af"
 
 # Menu
 
-menu_primary = "#4cb69f" # 500
-menu_text = "#fff"
-menu_text_active = "#8c9eff" # A100
-menu_title = "#fff"
+menu_primary = "#fff" # 500
+menu_text = "#63b9c4"
+menu_text_active = "#ed3535" # A100
+menu_title = "#1370af"
 
 # Home sections
 
-home_section_odd = "rgb(255, 255, 255)"
-home_section_even = "rgb(247, 247, 247)"
+home_section_odd = "rgb(99, 185, 196)"
+home_section_even = "rgb(72, 174, 123)"
