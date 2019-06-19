@@ -89,9 +89,19 @@
       <pubDate>Fri, 24 May 2019 16:00:00 +0000</pubDate>
       
       <guid>/talk/easp/</guid>
-      <description>&lt;p&gt;In May 2019, I had the wonderful opportunity to attend the 2019 &lt;a href=&#34;https://techandrelationships.org/&#34; target=&#34;_blank&#34;&gt;Technology and Relationships Conference&lt;/a&gt;, supported by the European Association of Social Psychology, Facebook, AdopteUnMec, APA Science Directorate, Eris Enterprises, and EmbrLabs. The conference was held in stunning &lt;a href=&#34;https://s3.amazonaws.com/ah-cms.hideawayreport.com/images/banner-french-alps-lake-annecy-france.jpg&#34; target=&#34;_blank&#34;&gt;Annecy&lt;/a&gt;, France.&lt;/p&gt;
+      <description>
+
+&lt;p&gt;In May 2019, I had the wonderful opportunity to attend the 2019 &lt;a href=&#34;https://techandrelationships.org/&#34; target=&#34;_blank&#34;&gt;Technology and Relationships Conference&lt;/a&gt;, supported by the European Association of Social Psychology, Facebook, AdopteUnMec, APA Science Directorate, Eris Enterprises, and EmbrLabs. The conference was held in stunning &lt;a href=&#34;https://s3.amazonaws.com/ah-cms.hideawayreport.com/images/banner-french-alps-lake-annecy-france.jpg&#34; target=&#34;_blank&#34;&gt;Annecy&lt;/a&gt;, France.&lt;/p&gt;
 
 &lt;p&gt;During my talk, I described one of my current research projects examining interpersonal confrontation on social media. If you are interested in seeing the slides, please email me and I&amp;rsquo;d be happy to send them to you.&lt;/p&gt;
+
+&lt;h1 id=&#34;to-enable-copy-your-resume-cv-to-static-files-cv-pdf-and-uncomment-the-lines-below&#34;&gt;To enable, copy your resume/CV to &lt;code&gt;static/files/cv.pdf&lt;/code&gt; and uncomment the lines below.&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;icon: cv
+icon_pack: ai
+link: files/easp_presentation.pdf&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

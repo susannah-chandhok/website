@@ -21,6 +21,9 @@ url_code: ""
 url_pdf: ""
 url_slides: ""
 url_video: ""
+ - icon: cv
+   icon_pack: ai
+   link: files/easp_presentation.pdf
 ---
 
 In May 2019, I had the wonderful opportunity to attend the 2019 [Technology and Relationships Conference](https://techandrelationships.org/), supported by the European Association of Social Psychology, Facebook, AdopteUnMec, APA Science Directorate, Eris Enterprises, and EmbrLabs. The conference was held in stunning [Annecy](https://s3.amazonaws.com/ah-cms.hideawayreport.com/images/banner-french-alps-lake-annecy-france.jpg), France. 
