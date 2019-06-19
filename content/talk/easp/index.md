@@ -22,4 +22,7 @@ url_pdf: ""
 url_slides: ""
 url_video: ""
 ---
-\externalfigure[https://s3.amazonaws.com/ah-cms.hideawayreport.com/images/banner-french-alps-lake-annecy-france.jpg] 
+
+In May 2019, I had the wonderful opportunity to attend the 2019 [Technology and Relationships Conference](https://techandrelationships.org/), supported by the European Association of Social Psychology, Facebook, AdopteUnMec, APA Science Directorate, Eris Enterprises, and EmbrLabs. The conference was held in stunning [Annecy](https://s3.amazonaws.com/ah-cms.hideawayreport.com/images/banner-french-alps-lake-annecy-france.jpg) in France. 
+
+I gave a talk on one of my current research projects examining interpersonal confrontation on social media. If you are interested in seeing the slides, please email me and I'd be happy to send them to you.
