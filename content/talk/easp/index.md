@@ -22,3 +22,4 @@ url_pdf: ""
 url_slides: ""
 url_video: ""
 ---
+\externalfigure[https://s3.amazonaws.com/ah-cms.hideawayreport.com/images/banner-french-alps-lake-annecy-france.jpg] 
