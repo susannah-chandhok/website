@@ -7,16 +7,22 @@ light = true
 
 # Primary
 
-primary = "#4cb69f"
+primary = "#368cbf"
 
 # Menu
 
-menu_primary = "#3f51b5" # 500
+menu_primary = "#4cb69f"" # 500
 menu_text = "#fff"
 menu_text_active = "#8c9eff" # A100
 menu_title = "#fff"
 
 # Home sections
 
-home_section_odd = "rgb(222, 243, 252) " #blue
-home_section_even = "rgb(255, 245, 183)" #yellow
+home_section_odd = "rgb(232, 244, 249)" #verylightblue
+home_section_even = "rgb(140, 188, 208) #skyblue
+
+
+
+# #4cb69f is mint
+
+# #dea6af is pasterl peach
