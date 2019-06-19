@@ -8,11 +8,11 @@ light = true
 
 # Primary
 
-primary = "#dea6af"
+primary = "#2c55f9"
 
 # Menu
 
-menu_primary = "#3f51b5" # 500
+menu_primary = "#dea6af" # 500
 menu_text = "#fff"
 menu_text_active = "#8c9eff" # A100
 menu_title = "#fff"
