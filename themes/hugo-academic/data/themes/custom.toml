@@ -13,11 +13,11 @@ primary = "#1370af"
 # Menu
 
 menu_primary = "#fff" # 500
-menu_text = "#63b9c4"
+menu_text = "#1370af"
 menu_text_active = "#ed3535" # A100
 menu_title = "#1370af"
 
 # Home sections
 
 home_section_odd = "rgb(255, 250, 240)"
-home_section_even = "rgb(83, 172, 183)"
+home_section_even = "rgb(19, 112, 175)"
