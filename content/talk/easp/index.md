@@ -18,7 +18,7 @@ summary: Talk presented at the 2019 Tech and Relationships Conference in Annecy,
 tags: []
 title: Interpersonal Confrontation on Social Media as a Function of Psychological Distance
 url_code: ""
-url_pdf: "easp_presentation.pdf"
+url_pdf: "content/talk/easp_presentation.pdf"
 url_slides: ""
 url_video: ""
 ---
