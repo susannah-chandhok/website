@@ -17,9 +17,7 @@ image:
   preview_only: false
 tags:
 - Analysis
-- Cleaning 
 - Visualization
-htmlwidgets::saveWidget(figure, file = "figure.html", selfcontained = TRUE)
 ---
 # Background
 This is a homework assignment I completed for a graduate course in [Data Science and Predictive Analysis](http://www.socr.umich.edu/people/dinov/2018/Fall/DSPA_HS650/) at the University of Michigan in Fall 2018.
