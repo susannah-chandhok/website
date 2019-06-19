@@ -1,1 +1,1 @@
-Website for http://www.susannahchandhok.com
+These are all the files for my website.
