@@ -299,22 +299,6 @@ rm Untitled.md
       <guid>/post/2019_06_18_myfirstpost/myfirstwebsitermarkdownfile/</guid>
       <description>
 
-
-&lt;div id=&#34;welcome&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Welcome!&lt;/h1&gt;
-&lt;p&gt;Hello and welcome to my website! This is my first post.&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>My first post</title>
-      <link>/post/2019_06_18_myfirstpost/myfirstwebsitermarkdownfile/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/post/2019_06_18_myfirstpost/myfirstwebsitermarkdownfile/</guid>
-      <description>
-
 &lt;h1 id=&#34;welcome&#34;&gt;Welcome!&lt;/h1&gt;
 
 &lt;p&gt;Thanks for checking out my website and reading my first post. There will be more soon!&lt;/p&gt;
