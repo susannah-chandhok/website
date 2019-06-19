@@ -1,4 +1,5 @@
 # Theme metadata
+
 name = "custom"
 
 # Is theme light or dark?
@@ -7,16 +8,16 @@ light = true
 
 # Primary
 
-primary = "#368cbf"
+primary = "#dea6af"
 
 # Menu
 
-menu_primary = "#4cb69f"" # 500
+menu_primary = "#3f51b5" # 500
 menu_text = "#fff"
 menu_text_active = "#8c9eff" # A100
 menu_title = "#fff"
 
 # Home sections
 
-home_section_odd = "rgb(232, 244, 249)"
-home_section_even = "rgb(140, 188, 208)" 
+home_section_odd = "rgb(255, 255, 255)"
+home_section_even = "rgb(247, 247, 247)"
