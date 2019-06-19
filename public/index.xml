@@ -369,6 +369,188 @@ $$&lt;/p&gt;
     </item>
     
     <item>
+      <title>Slides</title>
+      <link>/slides/pdfexample/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/slides/pdfexample/</guid>
+      <description>
+
+&lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;Academic&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Code block:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
+if porridge == &amp;quot;blueberry&amp;quot;:
+    print(&amp;quot;Eating...&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+
+&lt;p&gt;Block math:&lt;/p&gt;
+
+&lt;p&gt;$$
+f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+   One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+   &lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+   Three
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
+- Only the speaker can read these notes
+- Press `S` key to view
+{{% /speaker_note %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/aside&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/img/boards.jpg&#34;
+  &gt;
+
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
+{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
+{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Privacy Policy</title>
       <link>/privacy/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
@@ -645,167 +827,17 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>My first RMarkdown File</title>
-      <link>/post/myfirstfile/myfirstwebsitermarkdownfile/</link>
+      <title>My first post</title>
+      <link>/post/2019_06_18_myfirstpost/myfirstwebsitermarkdownfile/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/post/myfirstfile/myfirstwebsitermarkdownfile/</guid>
+      <guid>/post/2019_06_18_myfirstpost/myfirstwebsitermarkdownfile/</guid>
       <description>
 
 
-&lt;div id=&#34;testing&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Testing&lt;/h1&gt;
-&lt;p&gt;This is a test of my first website RMarkdown file.
-This is a test at 10PM.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;problem-1.1&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Problem 1.1&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Long-to-Wide Data format translation&lt;/strong&gt;&lt;/p&gt;
-&lt;div id=&#34;download-the-data&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Download the data&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Load the &lt;code&gt;rvest&lt;/code&gt; web scraping package.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# install.packages(&amp;#39;rvest&amp;#39;)
-library(rvest)&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;Download the &lt;a href=&#34;http://wiki.socr.umich.edu/index.php/SOCR_Data_PD_BiomedBigMetadata&#34;&gt;SOCR Parkinson’s Disease data&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Save the downloaded data as a data frame named &lt;strong&gt;pd_data&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;wiki_url &amp;lt;- read_html(&amp;#39;http://wiki.socr.umich.edu/index.php/SOCR_Data_PD_BiomedBigMetadata&amp;#39;)
-
-pd_data &amp;lt;- html_table(html_nodes(wiki_url, &amp;quot;table&amp;quot;)[[1]])&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;Check data to make sure it downloaded correctly.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;head(pd_data)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##   Cases L_caudate_ComputeArea L_caudate_Volume R_caudate_ComputeArea
-## 1     2                   597              767                   855
-## 2     2                   597              767                   855
-## 3     2                   597              767                   855
-## 4     2                   597              767                   855
-## 5     3                   604              873                   935
-## 6     3                   604              873                   935
-##   R_caudate_Volume L_putamen_ComputeArea L_putamen_Volume
-## 1              968                   842             1357
-## 2              968                   842             1357
-## 3              968                   842             1357
-## 4              968                   842             1357
-## 5             1043                   892             1366
-## 6             1043                   892             1366
-##   R_putamen_ComputeArea R_putamen_Volume L_hippocampus_ComputeArea
-## 1                  1285             3052                      1306
-## 2                  1285             3052                      1306
-## 3                  1285             3052                      1306
-## 4                  1285             3052                      1306
-## 5                  1305             2920                      1292
-## 6                  1305             2920                      1292
-##   L_hippocampus_Volume R_hippocampus_ComputeArea R_hippocampus_Volume
-## 1                 3238                      1513                 3759
-## 2                 3238                      1513                 3759
-## 3                 3238                      1513                 3759
-## 4                 3238                      1513                 3759
-## 5                 3079                      1516                 3827
-## 6                 3079                      1516                 3827
-##   cerebellum_ComputeArea cerebellum_Volume L_lingual_gyrus_ComputeArea
-## 1                  16845             13949                        3268
-## 2                  16845             13949                        3268
-## 3                  16845             13949                        3268
-## 4                  16845             13949                        3268
-## 5                  16698             14076                        3243
-## 6                  16698             14076                        3243
-##   L_lingual_gyrus_Volume R_lingual_gyrus_ComputeArea
-## 1                  11130                        3294
-## 2                  11130                        3294
-## 3                  11130                        3294
-## 4                  11130                        3294
-## 5                  11033                        3190
-## 6                  11033                        3190
-##   R_lingual_gyrus_Volume L_fusiform_gyrus_ComputeArea
-## 1                  12221                         3625
-## 2                  12221                         3625
-## 3                  12221                         3625
-## 4                  12221                         3625
-## 5                  12187                         3631
-## 6                  12187                         3631
-##   L_fusiform_gyrus_Volume R_fusiform_gyrus_ComputeArea
-## 1                   11087                         3232
-## 2                   11087                         3232
-## 3                   11087                         3232
-## 4                   11087                         3232
-## 5                   11116                         3302
-## 6                   11116                         3302
-##   R_fusiform_gyrus_Volume Sex Weight Age Dx chr12_rs34637584_GT
-## 1                   10122   1     84  67 PD                   1
-## 2                   10122   1     84  67 PD                   1
-## 3                   10122   1     84  67 PD                   1
-## 4                   10122   1     84  67 PD                   1
-## 5                   10162   0     97  39 PD                   1
-## 6                   10162   0     97  39 PD                   1
-##   chr17_rs11868035_GT UPDRS_part_I UPDRS_part_II UPDRS_part_III Time
-## 1                   0            1            12              1    0
-## 2                   0            1            12              1    6
-## 3                   0            1            12              1   12
-## 4                   0            1            12              1   18
-## 5                   1            0            19             22    0
-## 6                   1            0            19             22    6&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;choose-3-variables&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Choose 3 variables&lt;/h2&gt;
-&lt;p&gt;I will make a short data frame using the following 3 variables, in addition to the case and time variables, for ease of handling:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Case&lt;/em&gt; refers to case subject identifier&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Time&lt;/em&gt; refers to visit time with four time-points: (baseline (0), 6, 12, and 18 month follow-ups).&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;L_caudate_volume&lt;/em&gt; refers to the the 3D volume/size of the left caudate&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Weight&lt;/em&gt; refers to weight in kg&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Age&lt;/em&gt; refers to age in years&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# create short data frame with relevant variables for ease of handling
-pd_data_short &amp;lt;- data.frame(pd_data$Cases,
-                            pd_data$Time,
-                            pd_data$L_caudate_Volume, 
-                            pd_data$Weight, 
-                            pd_data$Age)&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;Take out ‘pd_data.’ from the column names.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;names(pd_data_short) = sub(&amp;quot;pd_data.&amp;quot;,&amp;quot;&amp;quot;,names(pd_data_short))   &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;translate-data-from-long-to-wide-format&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Translate data from long-to-wide format&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;I used the &lt;code&gt;reshape&lt;/code&gt; function in the &lt;code&gt;stats&lt;/code&gt; package to translate the data from long-to-wide.&lt;/li&gt;
-&lt;li&gt;After transforming from long to wide, now there is a column for each case of &lt;em&gt;L_caudate_volume&lt;/em&gt;, &lt;em&gt;Weight&lt;/em&gt;, and &lt;em&gt;Age&lt;/em&gt; at each measurement visit occasion, corresponding to baseline/0, 6 months, 12 months, and 18 months.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(stats)
-
-pd_data_wide &amp;lt;- reshape(pd_data_short, 
-                        idvar = &amp;quot;Cases&amp;quot;, 
-                        timevar = &amp;quot;Time&amp;quot;, 
-                        direction = &amp;quot;wide&amp;quot;)
-head(pd_data_wide)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##    Cases L_caudate_Volume.0 Weight.0 Age.0 L_caudate_Volume.6 Weight.6
-## 1      2                767       84    67                767       84
-## 5      3                873       97    39                873       97
-## 9      6                797       96    54                797       96
-## 13     7                798       79    53                798       79
-## 17     8                837       79    46                837       79
-## 21    10                808       71    56                808       71
-##    Age.6 L_caudate_Volume.12 Weight.12 Age.12 L_caudate_Volume.18
-## 1     67                 767        84     67                 767
-## 5     39                 873        97     39                 873
-## 9     54                 797        96     54                 797
-## 13    53                 798        79     53                 798
-## 17    46                 837        79     46                 837
-## 21    56                 808        71     56                 808
-##    Weight.18 Age.18
-## 1         84     67
-## 5         97     39
-## 9         96     54
-## 13        79     53
-## 17        79     46
-## 21        71     56&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div id=&#34;welcome&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Welcome!&lt;/h1&gt;
+&lt;p&gt;Hello and welcome to my website! This is my first post.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>

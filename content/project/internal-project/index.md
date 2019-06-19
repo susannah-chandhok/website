@@ -9,7 +9,7 @@ links:
   icon_pack: fab
   name: Follow
   url: https://twitter.com/georgecushen
-slides: example
+slides: pdfExample
 summary: An example of using the in-built project page.
 tags:
 - Deep Learning

@@ -100,6 +100,11 @@
   </url>
   
   <url>
+    <loc>/slides/pdfexample/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/privacy/</loc>
     <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
@@ -167,7 +172,7 @@
   </url>
   
   <url>
-    <loc>/post/myfirstfile/myfirstwebsitermarkdownfile/</loc>
+    <loc>/post/2019_06_18_myfirstpost/myfirstwebsitermarkdownfile/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
