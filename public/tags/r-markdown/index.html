@@ -76,13 +76,13 @@
 
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Playfair+Display:400,700|Fauna+One">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
   
 
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.ec4db4535d4d30b3676b5ef541b30181.css">
+  <link rel="stylesheet" href="/css/academic.min.fe324a743d05bd8bed782fb421e8bf36.css">
 
   
 
@@ -91,8 +91,8 @@
   
 
   
-  <link rel="alternate" href="/tags/r-markdown/index.xml" type="application/rss+xml" title="Academic">
-  <link rel="feed" href="/tags/r-markdown/index.xml" type="application/rss+xml" title="Academic">
+  <link rel="alternate" href="/tags/r-markdown/index.xml" type="application/rss+xml" title="Susannah Chandhok">
+  <link rel="feed" href="/tags/r-markdown/index.xml" type="application/rss+xml" title="Susannah Chandhok">
   
 
   <link rel="manifest" href="/site.webmanifest">
@@ -110,9 +110,9 @@
   
   <meta property="twitter:card" content="summary">
   
-  <meta property="og:site_name" content="Academic">
+  <meta property="og:site_name" content="Susannah Chandhok">
   <meta property="og:url" content="/tags/r-markdown/">
-  <meta property="og:title" content="R Markdown | Academic">
+  <meta property="og:title" content="R Markdown | Susannah Chandhok">
   <meta property="og:description" content="Ph.D. Student in Social Psychology"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
@@ -128,7 +128,7 @@
 
 
 
-  <title>R Markdown | Academic</title>
+  <title>R Markdown | Susannah Chandhok</title>
 
 </head>
 
@@ -172,7 +172,7 @@
   <div class="container">
 
     
-      <a class="navbar-brand" href="/">Academic</a>
+      <a class="navbar-brand" href="/">Susannah Chandhok</a>
       
       <button type="button" class="navbar-toggler" data-toggle="collapse"
               data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -371,9 +371,9 @@
     <h2><a href="/post/myfirstfile/myfirstwebsitermarkdownfile/">My first RMarkdown File</a></h2>
     <div class="article-style">
       
-      Testing This is a test of my first website RMarkdown file.
+      Testing This is a test of my first website RMarkdown file. This is a test at 9PM.
  Problem 1.1 Long-to-Wide Data format translation
-Download the data  Load the rvest web scraping package.  # install.packages(&#39;rvest&#39;) library(rvest)  Download the SOCR Parkinson’s Disease data Save the downloaded data as a data frame named pd_data.  wiki_url &lt;- read_html(&#39;http://wiki.socr.umich.edu/index.php/SOCR_Data_PD_BiomedBigMetadata&#39;) pd_data &lt;- html_table(html_nodes(wiki_url, &quot;table&quot;)[[1]])  Check data to make sure it downloaded correctly.  head(pd_data) ## Cases L_caudate_ComputeArea L_caudate_Volume R_caudate_ComputeArea ## 1 2 597 767 855 ## 2 2 597 767 855 ## 3 2 597 767 855 ## 4 2 597 767 855 ## 5 3 604 873 935 ## 6 3 604 873 935 ## R_caudate_Volume L_putamen_ComputeArea L_putamen_Volume ## 1 968 842 1357 ## 2 968 842 1357 ## 3 968 842 1357 ## 4 968 842 1357 ## 5 1043 892 1366 ## 6 1043 892 1366 ## R_putamen_ComputeArea R_putamen_Volume L_hippocampus_ComputeArea ## 1 1285 3052 1306 ## 2 1285 3052 1306 ## 3 1285 3052 1306 ## 4 1285 3052 1306 ## 5 1305 2920 1292 ## 6 1305 2920 1292 ## L_hippocampus_Volume R_hippocampus_ComputeArea R_hippocampus_Volume ## 1 3238 1513 3759 ## 2 3238 1513 3759 ## 3 3238 1513 3759 ## 4 3238 1513 3759 ## 5 3079 1516 3827 ## 6 3079 1516 3827 ## cerebellum_ComputeArea cerebellum_Volume L_lingual_gyrus_ComputeArea ## 1 16845 13949 3268 ## 2 16845 13949 3268 ## 3 16845 13949 3268 ## 4 16845 13949 3268 ## 5 16698 14076 3243 ## 6 16698 14076 3243 ## L_lingual_gyrus_Volume R_lingual_gyrus_ComputeArea ## 1 11130 3294 ## 2 11130 3294 ## 3 11130 3294 ## 4 11130 3294 ## 5 11033 3190 ## 6 11033 3190 ## R_lingual_gyrus_Volume L_fusiform_gyrus_ComputeArea ## 1 12221 3625 ## 2 12221 3625 ## 3 12221 3625 ## 4 12221 3625 ## 5 12187 3631 ## 6 12187 3631 ## L_fusiform_gyrus_Volume R_fusiform_gyrus_ComputeArea ## 1 11087 3232 ## 2 11087 3232 ## 3 11087 3232 ## 4 11087 3232 ## 5 11116 3302 ## 6 11116 3302 ## R_fusiform_gyrus_Volume Sex Weight Age Dx chr12_rs34637584_GT ## 1 10122 1 84 67 PD 1 ## 2 10122 1 84 67 PD 1 ## 3 10122 1 84 67 PD 1 ## 4 10122 1 84 67 PD 1 ## 5 10162 0 97 39 PD 1 ## 6 10162 0 97 39 PD 1 ## chr17_rs11868035_GT UPDRS_part_I UPDRS_part_II UPDRS_part_III Time ## 1 0 1 12 1 0 ## 2 0 1 12 1 6 ## 3 0 1 12 1 12 ## 4 0 1 12 1 18 ## 5 1 0 19 22 0 ## 6 1 0 19 22 6  Choose 3 variables I will make a short data frame using the following 3 variables, in addition to the case and time variables, for ease of handling:
+Download the data  Load the rvest web scraping package.  # install.packages(&#39;rvest&#39;) library(rvest)  Download the SOCR Parkinson’s Disease data Save the downloaded data as a data frame named pd_data.  wiki_url &lt;- read_html(&#39;http://wiki.socr.umich.edu/index.php/SOCR_Data_PD_BiomedBigMetadata&#39;) pd_data &lt;- html_table(html_nodes(wiki_url, &quot;table&quot;)[[1]])  Check data to make sure it downloaded correctly.
       
     </div>
   </div>
