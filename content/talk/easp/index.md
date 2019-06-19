@@ -10,22 +10,20 @@ image:
   focal_point: Right
 location: Annecy, France
 math: true
-projects:
-- internal-project
 publishDate: "2017-01-01T00:00:00Z"
 slides: 
-summary: Talk presented at the 2019 Tech and Relationships Conference in Annecy, France 
+summary: Talk presented at the 2019 Technology and Relationships Conference
 tags: []
 title: Interpersonal Confrontation on Social Media as a Function of Psychological Distance
 url_code: ""
 url_pdf: ""
 url_slides: ""
 url_video: ""
- - icon: cv
-   icon_pack: ai
-   link: files/easp_presentation.pdf
 ---
 
-In May 2019, I had the wonderful opportunity to attend the 2019 [Technology and Relationships Conference](https://techandrelationships.org/), supported by the European Association of Social Psychology, Facebook, AdopteUnMec, APA Science Directorate, Eris Enterprises, and EmbrLabs. The conference was held in stunning [Annecy](https://s3.amazonaws.com/ah-cms.hideawayreport.com/images/banner-french-alps-lake-annecy-france.jpg), France. 
+**About:** In May 2019, I had the wonderful opportunity to attend the 2019 [Technology and Relationships Conference](https://techandrelationships.org/), supported by the European Association of Social Psychology, Facebook, AdopteUnMec, APA Science Directorate, Eris Enterprises, and EmbrLabs. The conference was held in stunning Annecy, France. 
 
-During my talk, I described one of my current research projects examining interpersonal confrontation on social media. If you are interested in seeing the slides, please email me and I'd be happy to send them to you.
+During my talk, I described one of my current research projects examining interpersonal confrontation on social media. If you would like to see my full slide deck, please don't hesitate to [send me an email](mailto:susac@umich.edu?Subject=slides) and I would be happy to share them with you.
+
+ ![Annecy](annecy.jpeg)
+ *View from the conference*
