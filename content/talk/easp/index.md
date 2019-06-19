@@ -6,7 +6,7 @@ event: EASP Tech and Relationships Conference
 event_url: https://techandrelationships.org
 featured: false
 image:
-  caption: 'Excited to present my research!'
+  caption: 'Excited to present!'
   focal_point: Right
 location: Annecy, France
 math: true
@@ -18,7 +18,7 @@ summary: Talk presented at the 2019 Tech and Relationships Conference in Annecy,
 tags: []
 title: Interpersonal Confrontation on Social Media as a Function of Psychological Distance
 url_code: ""
-url_pdf: "content/talk/easp_presentation.pdf"
+url_pdf: ""
 url_slides: ""
 url_video: ""
 ---
