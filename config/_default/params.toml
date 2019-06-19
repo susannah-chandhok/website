@@ -16,7 +16,7 @@ day_night = true
 
 # Choose from `default`, `classic`, or `playfair`.
 
-font = "default"
+font = "alison"
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
 

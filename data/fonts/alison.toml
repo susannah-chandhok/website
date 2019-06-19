@@ -1,0 +1,16 @@
+# Font style metadata
+name = "alison"
+
+# Optional Google font URL
+google_fonts = "Cabin:400,500|Luckiest+Guy|Eczar|Courgette|Muli|Gochi+Hand|Sawarabi+Mincho|Work+Sans|Quicksand"
+
+# Font families
+heading_font = "Gochi Hand"
+body_font = "Quicksand"
+nav_font = "Gochi Hand"
+mono_font = "Sawarabi Mincho"
+
+# Font size
+font_size = "22"
+font_size_small = "14"
+

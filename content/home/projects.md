@@ -25,6 +25,10 @@ subtitle = "A few examples of my RMarkdown Projects"
     name = "All"
     tag = "*"
   
+    [[content.filter_button]]
+    name = "Analysis"
+    tag = "Analysis"
+  
   [[content.filter_button]]
     name = "Cleaning"
     tag = "Cleaning"
@@ -32,10 +36,6 @@ subtitle = "A few examples of my RMarkdown Projects"
   [[content.filter_button]]
     name = "Visualization"
     tag = "Visualization"
-    
-  [[content.filter_button]]
-    name = "Analysis"
-    tag = "Analysis"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -68,7 +68,7 @@ subtitle = "A few examples of my RMarkdown Projects"
   # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
-  # text_color_light = false  
+  # text_color_light = true  
   
 [advanced]
  # Custom CSS. 
