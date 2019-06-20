@@ -18,7 +18,7 @@ organizations:
   url: "https://lsa.umich.edu/psych"
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a Ph.D. student in social psychology at the University of Michigan in Ann Arbor.
+bio: Ph.D. student in social psychology at the University of Michigan in Ann Arbor studying social media, social behaviors, and well-being.
 
 # Interests
 interests: 
