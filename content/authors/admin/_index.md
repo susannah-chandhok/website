@@ -72,4 +72,4 @@ user_groups:
 - Visitors
 ---
 
-TEST I am a Ph.D. student in social psychology at the University of Michigan in Ann Arbor studying social behavior in the digital age. My primary advisor is [Dr. Ethan Kross](http://selfcontrol.psych.lsa.umich.edu). I am excited to be examining the psychosocial forces influencing emotional expression and interpersonal communication on the Internet and on social media, with a focus on distinguishing these forces from those shaping in-person behavior.
+I am a Ph.D. student in social psychology at the University of Michigan in Ann Arbor studying social behavior in the digital age. My primary advisor is [Dr. Ethan Kross](http://selfcontrol.psych.lsa.umich.edu). I am excited to be examining the psychosocial forces influencing emotional expression and interpersonal communication on the Internet and on social media, with a focus on distinguishing these forces from those shaping in-person behavior.
