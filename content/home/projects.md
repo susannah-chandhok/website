@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
 
-title = "Projects"
+title = "Portfolio"
 subtitle = "A few examples of my RMarkdown Projects"
 
 [content]
