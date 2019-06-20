@@ -21,6 +21,24 @@
     </item>
     
     <item>
+      <title>Teaching</title>
+      <link>/tags/teaching/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/teaching/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Guest Lectures</title>
+      <link>/tags/guest-lectures/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/guest-lectures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Analysis</title>
       <link>/tags/analysis/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
@@ -35,6 +53,15 @@
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mentoring</title>
+      <link>/tags/mentoring/</link>
+      <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mentoring/</guid>
       <description></description>
     </item>
     

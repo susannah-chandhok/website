@@ -110,6 +110,38 @@
   </url>
   
   <url>
+    <loc>/teaching/psych389_wn_2019/</loc>
+    <lastmod>2019-01-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/teaching/</loc>
+    <lastmod>2019-01-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/teaching/</loc>
+    <lastmod>2019-01-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/guest-lectures/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/teaching/guest_lecture_401_social-disconnection/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/teaching/guest_lecture_280/</loc>
+    <lastmod>2018-11-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/analysis/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -133,6 +165,11 @@
   </url>
   
   <url>
+    <loc>/teaching/psych280_fa_2018/</loc>
+    <lastmod>2018-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/privacy/</loc>
     <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
@@ -140,6 +177,22 @@
   <url>
     <loc>/talk/spsp2018/</loc>
     <lastmod>2018-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/teaching/psych280_wn_2018/</loc>
+    <lastmod>2018-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/mentoring/</loc>
+    <lastmod>2017-09-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/teaching/mentoring/</loc>
+    <lastmod>2017-09-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -177,13 +230,13 @@
   </url>
   
   <url>
-    <loc>/tags/update/</loc>
+    <loc>/categories/update/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/update/</loc>
+    <loc>/tags/update/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
