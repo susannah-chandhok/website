@@ -2,13 +2,13 @@
 name = "alison"
 
 # Optional Google font URL
-google_fonts = "Cabin:400,500|Luckiest+Guy|Eczar|Courgette|Gochi+Hand|Sawarabi+Mincho|Work+Sans|Quicksand"
+google_fonts = "Cabin:400,500|Luckiest+Guy|Eczar|Courgette|Gochi+Hand|Work+Sans|Quicksand|Open+Sans|Mali|Oxygen|Roboto+Slab"
 
-# Font families
+# Font families 
 heading_font = "Gochi Hand"
-body_font = "Work Sans"
+body_font = "Oxygen"
 nav_font = "Gochi Hand"
-mono_font = "Sawarabi Mincho"
+mono_font = "Sawarabi Mincho" 
 
 # Font size
 font_size = "18"
