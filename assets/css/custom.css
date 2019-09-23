@@ -1,0 +1,17 @@
+/* headers */
+h1, h2, h3, h4, h5 {
+  font-family: "Impact", sans-serif;
+}
+
+/* code chunk styling */
+/* code "box" */
+pre {
+  background: #5D576B;
+  background-color: #99E1D9;
+  color: #5D576B;
+}
+
+/* code text */
+code {
+  font-family: "Comic Sans MS", sans-serif;
+}
