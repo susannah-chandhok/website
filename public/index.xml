@@ -132,69 +132,6 @@ Ethan Kross, University of Michigan, Ann Arbor&lt;/p&gt;
     </item>
     
     <item>
-      <title>Display Jupyter Notebooks with Academic</title>
-      <link>/post/jupyter/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/jupyter/</guid>
-      <description>
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.core.display import Image
-Image(&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;./academic_0_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Welcome to Academic!&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;Welcome to Academic!
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;install-python-and-jupyter&#34;&gt;Install Python and Jupyter&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34; target=&#34;_blank&#34;&gt;Install Anaconda&lt;/a&gt; which includes Python 3 and Jupyter notebook.&lt;/p&gt;
-
-&lt;p&gt;Otherwise, for advanced users, install Jupyter notebook with &lt;code&gt;pip3 install jupyter&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;create-a-new-blog-post-as-usual-https-sourcethemes-com-academic-docs-managing-content-create-a-blog-post&#34;&gt;Create a new blog post &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-a-blog-post&#34; target=&#34;_blank&#34;&gt;as usual&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY_WEBSITE_FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;my-post&lt;/code&gt; with the file path to your Academic website folder and a name for your blog post (without spaces), respectively:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd &amp;lt;MY_WEBSITE_FOLDER&amp;gt;
-hugo new  --kind post post/my-post
-cd &amp;lt;MY_WEBSITE_FOLDER&amp;gt;/content/post/my-post/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
-
-&lt;p&gt;Run the following command to start Jupyter within your new blog post folder. Then create a new Jupyter notebook (&lt;em&gt;New &amp;gt; Python Notebook&lt;/em&gt;) or upload a notebook.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter notebook
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter nbconvert Untitled.ipynb --to markdown --NbConvertApp.output_files_dir=.
-
-# Copy the contents of Untitled.md and append it to index.md:
-cat Untitled.md | tee -a index.md
-
-# Remove the temporary file:
-rm Untitled.md
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
-
-&lt;p&gt;Open &lt;code&gt;index.md&lt;/code&gt; in your text editor and edit the title etc. in the &lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34; target=&#34;_blank&#34;&gt;front matter&lt;/a&gt; according to your preference.&lt;/p&gt;
-
-&lt;p&gt;To set a &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34; target=&#34;_blank&#34;&gt;featured image&lt;/a&gt;, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
-
-&lt;p&gt;For other tips, such as using math, see the guide on &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;writing content with Academic&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Slides</title>
       <link>/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
@@ -676,8 +613,7 @@ library(DT)
 &lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-072eea7915f7515fd71a&#34;&gt;{&amp;ldquo;x&amp;rdquo;:{&amp;ldquo;filter&amp;rdquo;:&amp;ldquo;none&amp;rdquo;,&amp;ldquo;data&amp;rdquo;:[[&amp;ldquo;1&amp;rdquo;,&amp;ldquo;2&amp;rdquo;,&amp;ldquo;3&amp;rdquo;,&amp;ldquo;4&amp;rdquo;,&amp;ldquo;5&amp;rdquo;,&amp;ldquo;6&amp;rdquo;,&amp;ldquo;7&amp;rdquo;,&amp;ldquo;8&amp;rdquo;,&amp;ldquo;9&amp;rdquo;,&amp;ldquo;10&amp;rdquo;,&amp;ldquo;11&amp;rdquo;,&amp;ldquo;12&amp;rdquo;,&amp;ldquo;13&amp;rdquo;,&amp;ldquo;14&amp;rdquo;,&amp;ldquo;15&amp;rdquo;,&amp;ldquo;16&amp;rdquo;,&amp;ldquo;17&amp;rdquo;,&amp;ldquo;18&amp;rdquo;,&amp;ldquo;19&amp;rdquo;,&amp;ldquo;20&amp;rdquo;,&amp;ldquo;21&amp;rdquo;,&amp;ldquo;22&amp;rdquo;,&amp;ldquo;23&amp;rdquo;,&amp;ldquo;24&amp;rdquo;,&amp;ldquo;25&amp;rdquo;,&amp;ldquo;26&amp;rdquo;,&amp;ldquo;27&amp;rdquo;,&amp;ldquo;28&amp;rdquo;,&amp;ldquo;29&amp;rdquo;,&amp;ldquo;30&amp;rdquo;,&amp;ldquo;31&amp;rdquo;,&amp;ldquo;32&amp;rdquo;,&amp;ldquo;33&amp;rdquo;,&amp;ldquo;34&amp;rdquo;,&amp;ldquo;35&amp;rdquo;,&amp;ldquo;36&amp;rdquo;,&amp;ldquo;37&amp;rdquo;,&amp;ldquo;38&amp;rdquo;,&amp;ldquo;39&amp;rdquo;,&amp;ldquo;40&amp;rdquo;,&amp;ldquo;41&amp;rdquo;,&amp;ldquo;42&amp;rdquo;,&amp;ldquo;43&amp;rdquo;,&amp;ldquo;44&amp;rdquo;,&amp;ldquo;45&amp;rdquo;,&amp;ldquo;46&amp;rdquo;,&amp;ldquo;47&amp;rdquo;,&amp;ldquo;48&amp;rdquo;,&amp;ldquo;49&amp;rdquo;,&amp;ldquo;50&amp;rdquo;,&amp;ldquo;51&amp;rdquo;,&amp;ldquo;52&amp;rdquo;,&amp;ldquo;53&amp;rdquo;,&amp;ldquo;54&amp;rdquo;,&amp;ldquo;55&amp;rdquo;,&amp;ldquo;56&amp;rdquo;,&amp;ldquo;57&amp;rdquo;,&amp;ldquo;58&amp;rdquo;,&amp;ldquo;59&amp;rdquo;,&amp;ldquo;60&amp;rdquo;,&amp;ldquo;61&amp;rdquo;,&amp;ldquo;62&amp;rdquo;,&amp;ldquo;63&amp;rdquo;,&amp;ldquo;64&amp;rdquo;,&amp;ldquo;65&amp;rdquo;,&amp;ldquo;66&amp;rdquo;,&amp;ldquo;67&amp;rdquo;,&amp;ldquo;68&amp;rdquo;,&amp;ldquo;69&amp;rdquo;,&amp;ldquo;70&amp;rdquo;,&amp;ldquo;71&amp;rdquo;,&amp;ldquo;72&amp;rdquo;,&amp;ldquo;73&amp;rdquo;,&amp;ldquo;74&amp;rdquo;,&amp;ldquo;75&amp;rdquo;,&amp;ldquo;76&amp;rdquo;,&amp;ldquo;77&amp;rdquo;,&amp;ldquo;78&amp;rdquo;,&amp;ldquo;79&amp;rdquo;,&amp;ldquo;80&amp;rdquo;,&amp;ldquo;81&amp;rdquo;,&amp;ldquo;82&amp;rdquo;,&amp;ldquo;83&amp;rdquo;,&amp;ldquo;84&amp;rdquo;,&amp;ldquo;85&amp;rdquo;,&amp;ldquo;86&amp;rdquo;,&amp;ldquo;87&amp;rdquo;,&amp;ldquo;88&amp;rdquo;,&amp;ldquo;89&amp;rdquo;,&amp;ldquo;90&amp;rdquo;,&amp;ldquo;91&amp;rdquo;,&amp;ldquo;92&amp;rdquo;,&amp;ldquo;93&amp;rdquo;,&amp;ldquo;94&amp;rdquo;,&amp;ldquo;95&amp;rdquo;,&amp;ldquo;96&amp;rdquo;,&amp;ldquo;97&amp;rdquo;,&amp;ldquo;98&amp;rdquo;,&amp;ldquo;99&amp;rdquo;,&amp;ldquo;100&amp;rdquo;,&amp;ldquo;101&amp;rdquo;,&amp;ldquo;102&amp;rdquo;,&amp;ldquo;103&amp;rdquo;,&amp;ldquo;104&amp;rdquo;,&amp;ldquo;105&amp;rdquo;,&amp;ldquo;106&amp;rdquo;,&amp;ldquo;107&amp;rdquo;,&amp;ldquo;108&amp;rdquo;,&amp;ldquo;109&amp;rdquo;,&amp;ldquo;110&amp;rdquo;,&amp;ldquo;111&amp;rdquo;,&amp;ldquo;112&amp;rdquo;,&amp;ldquo;113&amp;rdquo;,&amp;ldquo;114&amp;rdquo;,&amp;ldquo;115&amp;rdquo;,&amp;ldquo;116&amp;rdquo;,&amp;ldquo;117&amp;rdquo;,&amp;ldquo;118&amp;rdquo;,&amp;ldquo;119&amp;rdquo;,&amp;ldquo;120&amp;rdquo;,&amp;ldquo;121&amp;rdquo;,&amp;ldquo;122&amp;rdquo;,&amp;ldquo;123&amp;rdquo;,&amp;ldquo;124&amp;rdquo;,&amp;ldquo;125&amp;rdquo;,&amp;ldquo;126&amp;rdquo;,&amp;ldquo;127&amp;rdquo;,&amp;ldquo;128&amp;rdquo;,&amp;ldquo;129&amp;rdquo;,&amp;ldquo;130&amp;rdquo;,&amp;ldquo;131&amp;rdquo;,&amp;ldquo;132&amp;rdquo;,&amp;ldquo;133&amp;rdquo;,&amp;ldquo;134&amp;rdquo;,&amp;ldquo;135&amp;rdquo;,&amp;ldquo;136&amp;rdquo;,&amp;ldquo;137&amp;rdquo;,&amp;ldquo;138&amp;rdquo;,&amp;ldquo;139&amp;rdquo;,&amp;ldquo;140&amp;rdquo;,&amp;ldquo;141&amp;rdquo;,&amp;ldquo;142&amp;rdquo;,&amp;ldquo;143&amp;rdquo;,&amp;ldquo;144&amp;rdquo;,&amp;ldquo;145&amp;rdquo;,&amp;ldquo;146&amp;rdquo;,&amp;ldquo;147&amp;rdquo;,&amp;ldquo;148&amp;rdquo;,&amp;ldquo;149&amp;rdquo;,&amp;ldquo;150&amp;rdquo;,&amp;ldquo;151&amp;rdquo;,&amp;ldquo;152&amp;rdquo;,&amp;ldquo;153&amp;rdquo;,&amp;ldquo;154&amp;rdquo;,&amp;ldquo;155&amp;rdquo;,&amp;ldquo;156&amp;rdquo;,&amp;ldquo;157&amp;rdquo;,&amp;ldquo;158&amp;rdquo;,&amp;ldquo;159&amp;rdquo;,&amp;ldquo;160&amp;rdquo;,&amp;ldquo;161&amp;rdquo;,&amp;ldquo;162&amp;rdquo;,&amp;ldquo;163&amp;rdquo;,&amp;ldquo;164&amp;rdquo;,&amp;ldquo;165&amp;rdquo;,&amp;ldquo;166&amp;rdquo;,&amp;ldquo;167&amp;rdquo;,&amp;ldquo;168&amp;rdquo;,&amp;ldquo;169&amp;rdquo;,&amp;ldquo;170&amp;rdquo;,&amp;ldquo;171&amp;rdquo;,&amp;ldquo;172&amp;rdquo;,&amp;ldquo;173&amp;rdquo;,&amp;ldquo;174&amp;rdquo;,&amp;ldquo;175&amp;rdquo;,&amp;ldquo;176&amp;rdquo;,&amp;ldquo;177&amp;rdquo;,&amp;ldquo;178&amp;rdquo;,&amp;ldquo;179&amp;rdquo;,&amp;ldquo;180&amp;rdquo;,&amp;ldquo;181&amp;rdquo;,&amp;ldquo;182&amp;rdquo;,&amp;ldquo;183&amp;rdquo;,&amp;ldquo;184&amp;rdquo;,&amp;ldquo;185&amp;rdquo;,&amp;ldquo;186&amp;rdquo;,&amp;ldquo;187&amp;rdquo;,&amp;ldquo;188&amp;rdquo;,&amp;ldquo;189&amp;rdquo;,&amp;ldquo;190&amp;rdquo;,&amp;ldquo;191&amp;rdquo;,&amp;ldquo;192&amp;rdquo;,&amp;ldquo;193&amp;rdquo;,&amp;ldquo;194&amp;rdquo;,&amp;ldquo;195&amp;rdquo;,&amp;ldquo;196&amp;rdquo;,&amp;ldquo;197&amp;rdquo;,&amp;ldquo;198&amp;rdquo;,&amp;ldquo;199&amp;rdquo;,&amp;ldquo;200&amp;rdquo;],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,53,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200],[&amp;ldquo;Software_Engineer&amp;rdquo;,&amp;ldquo;Mathematician&amp;rdquo;,&amp;ldquo;Actuary&amp;rdquo;,&amp;ldquo;Statistician&amp;rdquo;,&amp;ldquo;Computer_Systems_Analyst&amp;rdquo;,&amp;ldquo;Meteorologist&amp;rdquo;,&amp;ldquo;Biologist&amp;rdquo;,&amp;ldquo;Historian&amp;rdquo;,&amp;ldquo;Audiologist&amp;rdquo;,&amp;ldquo;Dental_Hygenist&amp;rdquo;,&amp;ldquo;Sociologist&amp;rdquo;,&amp;ldquo;Accountant&amp;rdquo;,&amp;ldquo;Paralegal_Assistant&amp;rdquo;,&amp;ldquo;Physicist&amp;rdquo;,&amp;ldquo;Financial_Planner&amp;rdquo;,&amp;ldquo;Philosopher&amp;rdquo;,&amp;ldquo;Occupational_Therapist&amp;rdquo;,&amp;ldquo;Parole_Officer&amp;rdquo;,&amp;ldquo;Aerospace_Engineer&amp;rdquo;,&amp;ldquo;Economist&amp;rdquo;,&amp;ldquo;Speech_Pathologist&amp;rdquo;,&amp;ldquo;Astronomer&amp;rdquo;,&amp;ldquo;Loan_Officer&amp;rdquo;,&amp;ldquo;Petroleum_Engineer&amp;rdquo;,&amp;ldquo;Dietitian&amp;rdquo;,&amp;ldquo;Technical_Writer&amp;rdquo;,&amp;ldquo;Optometrist&amp;rdquo;,&amp;ldquo;Computer_Programmer&amp;rdquo;,&amp;ldquo;Librarian&amp;rdquo;,&amp;ldquo;Medical_Technologist&amp;rdquo;,&amp;ldquo;Stenographer/Court_Reporter&amp;rdquo;,&amp;ldquo;Chiropractor&amp;rdquo;,&amp;ldquo;Civil_Engineer&amp;rdquo;,&amp;ldquo;Medical_Secretary&amp;rdquo;,&amp;ldquo;Medical_Laboratory_Technician&amp;rdquo;,&amp;ldquo;Pharmacist&amp;rdquo;,&amp;ldquo;Industrial_Engineer&amp;rdquo;,&amp;ldquo;Purchasing_Agent&amp;rdquo;,&amp;ldquo;Bookkeeper&amp;rdquo;,&amp;ldquo;Medical_Records_Technician&amp;rdquo;,&amp;ldquo;School_Principal&amp;rdquo;,&amp;ldquo;Dental_Laboratory_Technician&amp;rdquo;,&amp;ldquo;Tax_Examiner/Collector&amp;rdquo;,&amp;ldquo;Web_Developer&amp;rdquo;,&amp;ldquo;Physical_Therapist&amp;rdquo;,&amp;ldquo;Vocational_Counselor&amp;rdquo;,&amp;ldquo;Motion_Picture_Editor&amp;rdquo;,&amp;ldquo;Physiologist&amp;rdquo;,&amp;ldquo;Nuclear_Engineer&amp;rdquo;,&amp;ldquo;Insurance_Underwriter&amp;rdquo;,&amp;ldquo;Industrial_Designer&amp;rdquo;,&amp;ldquo;Orthodontist&amp;rdquo;,&amp;ldquo;Museum_Curator&amp;rdquo;,&amp;ldquo;Judge&amp;rdquo;,&amp;ldquo;Personnel_Recruiter&amp;rdquo;,&amp;ldquo;Geologist&amp;rdquo;,&amp;ldquo;Podiatrist&amp;rdquo;,&amp;ldquo;Market_Research_Analyst&amp;rdquo;,&amp;ldquo;Jeweler&amp;rdquo;,&amp;ldquo;Anthropologist&amp;rdquo;,&amp;ldquo;Architectural_Drafter&amp;rdquo;,&amp;ldquo;Mechanical_Engineer&amp;rdquo;,&amp;ldquo;Optician&amp;rdquo;,&amp;ldquo;Archeologist&amp;rdquo;,&amp;ldquo;Veterinarian&amp;rdquo;,&amp;ldquo;Typist/Word_Processor&amp;rdquo;,&amp;ldquo;Cosmetologist&amp;rdquo;,&amp;ldquo;Clergy&amp;rdquo;,&amp;ldquo;Chemist&amp;rdquo;,&amp;ldquo;Musical_Instrument_Repairer&amp;rdquo;,&amp;ldquo;Zoologist&amp;rdquo;,&amp;ldquo;Conservationist&amp;rdquo;,&amp;ldquo;Social_Worker&amp;rdquo;,&amp;ldquo;Set_Designer&amp;rdquo;,&amp;ldquo;Dentist&amp;rdquo;,&amp;ldquo;Barber&amp;rdquo;,&amp;ldquo;Occupational_Safety/Health_Inspector&amp;rdquo;,&amp;ldquo;Electrical_Engineer&amp;rdquo;,&amp;ldquo;Psychologist&amp;rdquo;,&amp;ldquo;Publication&lt;em&gt;Editor&amp;rdquo;,&amp;ldquo;Author&amp;rdquo;,&amp;ldquo;Attorney&amp;rdquo;,&amp;ldquo;Physician&lt;/em&gt;(General_Practice)&amp;ldquo;,&amp;ldquo;Engineering_Technician&amp;rdquo;,&amp;ldquo;Physician_Assistant&amp;rdquo;,&amp;ldquo;Bank&lt;em&gt;Teller&amp;rdquo;,&amp;ldquo;Artist&lt;/em&gt;(Fine_Art)&amp;ldquo;,&amp;ldquo;Respiratory_Therapist&amp;rdquo;,&amp;ldquo;Bookbinder&amp;rdquo;,&amp;ldquo;Photographic_Process_Worker&amp;rdquo;,&amp;ldquo;Teacher&amp;rsquo;s_Aide&amp;rdquo;,&amp;ldquo;Psychiatrist&amp;rdquo;,&amp;ldquo;Heating/Refrigeration&lt;em&gt;Mechanic&amp;rdquo;,&amp;ldquo;Nurse&lt;/em&gt;(Registered)&amp;ldquo;,&amp;ldquo;Sewage_Plant_Operator&amp;rdquo;,&amp;ldquo;Hotel_Manager&amp;rdquo;,&amp;ldquo;Telephone_Installer/Repairer&amp;rdquo;,&amp;ldquo;Industrial_Machine_Repairer20&amp;rdquo;,&amp;ldquo;Broadcast_Technician&amp;rdquo;,&amp;ldquo;Teacher&amp;rdquo;,&amp;ldquo;Surgeon&amp;rdquo;,&amp;ldquo;Electrical_Equipment_Repairer&amp;rdquo;,&amp;ldquo;Insurance_Agent&amp;rdquo;,&amp;ldquo;Receptionist&amp;rdquo;,&amp;ldquo;Cashier&amp;rdquo;,&amp;ldquo;Advertising_Account_Executive&amp;rdquo;,&amp;ldquo;Vending_Machine_Repairer&amp;rdquo;,&amp;ldquo;Architect&amp;rdquo;,&amp;ldquo;Electrical_Technician&amp;rdquo;,&amp;ldquo;Computer_Service_Technician&amp;rdquo;,&amp;ldquo;Stockbroker&amp;rdquo;,&amp;ldquo;Forklift_Operator&amp;rdquo;,&amp;ldquo;Public_Relations_Executive&amp;rdquo;,&amp;ldquo;Corporate&lt;em&gt;Executive&lt;/em&gt;(Senior)&amp;ldquo;,&amp;ldquo;Construction_Foreman&amp;rdquo;,&amp;ldquo;Piano_Tuner&amp;rdquo;,&amp;ldquo;Furniture_Upholsterer&amp;rdquo;,&amp;ldquo;Communications_Equipment_Mechanic&amp;rdquo;,&amp;ldquo;Agricultural_Scientist&amp;rdquo;,&amp;ldquo;Compositor/Typesetter&amp;rdquo;,&amp;ldquo;Commercial_Airline_Pilot&amp;rdquo;,&amp;ldquo;Appliance_Repairer&amp;rdquo;,&amp;ldquo;Office_Machine_Repairer&amp;rdquo;,&amp;ldquo;Undertaker&amp;rdquo;,&amp;ldquo;Real_Estate_Agent&amp;rdquo;,&amp;ldquo;Telephone&lt;em&gt;Operator&amp;rdquo;,&amp;ldquo;Nurse&lt;/em&gt;(Licensed_Practical)&amp;ldquo;,&amp;ldquo;Newscaster&amp;rdquo;,&amp;ldquo;Surveyor&amp;rdquo;,&amp;ldquo;Shipping/Receiving_Clerk&amp;rdquo;,&amp;ldquo;Dressmaker&amp;rdquo;,&amp;ldquo;Tool-And-Die_Maker&amp;rdquo;,&amp;ldquo;Guard&amp;rdquo;,&amp;ldquo;Automobile_Assembler&amp;rdquo;,&amp;ldquo;Precision_Assembler&amp;rdquo;,&amp;ldquo;Railroad_Conductor&amp;rdquo;,&amp;ldquo;Machine_Tool_Operator&amp;rdquo;,&amp;ldquo;Machinist&amp;rdquo;,&amp;ldquo;Waiter/Waitress&amp;rdquo;,&amp;ldquo;Bartender&amp;rdquo;,&amp;ldquo;Janitor&amp;rdquo;,&amp;ldquo;Plumber&amp;rdquo;,&amp;ldquo;Fashion_Designer&amp;rdquo;,&amp;ldquo;Photographer&amp;rdquo;,&amp;ldquo;Shoe_Maker/Repairer&amp;rdquo;,&amp;ldquo;Nurse&amp;rsquo;s_Aide&amp;rdquo;,&amp;ldquo;Recreation_Worker&amp;rdquo;,&amp;ldquo;Electrician&amp;rdquo;,&amp;ldquo;Flight_Attendant&amp;rdquo;,&amp;ldquo;Glazier&amp;rdquo;,&amp;ldquo;Nuclear_Decontamination_Technician&amp;rdquo;,&amp;ldquo;Automobile_Body_Repairer&amp;rdquo;,&amp;ldquo;Sales&lt;em&gt;Representative&lt;/em&gt;(Wholesale)&amp;ldquo;,&amp;ldquo;Drill-Press_Operator&amp;rdquo;,&amp;ldquo;Aircraft&lt;em&gt;Mechanic&amp;rdquo;,&amp;ldquo;Buyer&amp;rdquo;,&amp;ldquo;Chauffeur&amp;rdquo;,&amp;ldquo;Farmer&amp;rdquo;,&amp;ldquo;Salesperson&lt;/em&gt;(Retail)&amp;ldquo;,&amp;ldquo;Corrections_Officer&amp;rdquo;,&amp;ldquo;Drywall_Applicator/Finisher&amp;rdquo;,&amp;ldquo;Carpet/Tile_Installer&amp;rdquo;,&amp;ldquo;Actor&amp;rdquo;,&amp;ldquo;Stationary_Engineer&amp;rdquo;,&amp;ldquo;Bus_Driver&amp;rdquo;,&amp;ldquo;Highway_Patrol_Officer&amp;rdquo;,&amp;ldquo;Dishwasher&amp;rdquo;,&amp;ldquo;Bricklayer&amp;rdquo;,&amp;ldquo;Maid&amp;rdquo;,&amp;ldquo;Advertising_Salesperson&amp;rdquo;,&amp;ldquo;Truck_Driver&amp;rdquo;,&amp;ldquo;Travel_Agent&amp;rdquo;,&amp;ldquo;Construction_Machinery_Operator&amp;rdquo;,&amp;ldquo;Mail_Carrier&amp;rdquo;,&amp;ldquo;Carpenter&amp;rdquo;,&amp;ldquo;Firefighter&amp;rdquo;,&amp;ldquo;Disc_Jockey&amp;rdquo;,&amp;ldquo;Police_Officer&amp;rdquo;,&amp;ldquo;Garbage_Collector&amp;rdquo;,&amp;ldquo;Choreographer&amp;rdquo;,&amp;ldquo;Plasterer&amp;rdquo;,&amp;ldquo;Butcher&amp;rdquo;,&amp;ldquo;Automobile_Mechanic&amp;rdquo;,&amp;ldquo;Dairy_Farmer&amp;rdquo;,&amp;ldquo;Photojournalist&amp;rdquo;,&amp;ldquo;Child_Care_Worker&amp;rdquo;,&amp;ldquo;Sheet_Metal&lt;em&gt;Worker&amp;rdquo;,&amp;ldquo;Reporter&lt;/em&gt;(Newspaper)&amp;ldquo;,&amp;ldquo;Sailor&amp;rdquo;,&amp;ldquo;Stevedore&amp;rdquo;,&amp;ldquo;Construction_Worker&amp;rdquo;,&amp;ldquo;Meter_Reader&amp;rdquo;,&amp;ldquo;Painter&amp;rdquo;,&amp;ldquo;Welder&amp;rdquo;,&amp;ldquo;Emergency_Medical_Technician&amp;rdquo;,&amp;ldquo;Taxi_Driver&amp;rdquo;,&amp;ldquo;Roofer&amp;rdquo;,&amp;ldquo;Lumberjack&amp;rdquo;,&amp;ldquo;Ironworker&amp;rdquo;,&amp;ldquo;Roustabout&amp;rdquo;],[60,73,123,129,147,175,182,192,195,197,200,216,217,217,223,225,230,236,240,247,251,252,256,257,270,270,273,273,282,285,292,296,297,298,299,302,307,309,311,312,312,317,330,332,333,338,339,349,352,355,360,365,367,367,370,372,373,375,376,380,390,392,395,398,399,402,404,410,411,413,422,423,424,428,431,432,433,437,438,446,448,448,449,462,463,469,477,482,483,491,495,496,504,504,506,506,506,507,518,528,528,529,531,531,533,536,538,542,542,547,548,548,552,556,558,559,560,562,564,565,566,571,573,574,578,581,583,583,585,585,590,595,600,600,604,605,616,621,621,621,626,628,633,638,638,642,643,643,643,645,645,649,650,651,655,661,665,666,666,673,678,679,680,681,686,692,695,699,700,701,711,716,720,725,729,730,730,731,731,738,742,743,749,751,753,769,770,777,780,786,798,798,798,811,814,821,863,868,887,892],[87140,94178,87204,73208,77153,85210,74278,63208,63144,67107,70122,60174,47153,106196,101164,61221,70193,47155,95130,87240,65143,105233,55239,109147,52127,63170,96163,71176,54197,55100,48256,68358,76139,30110,36129,109070,75122,55165,33138,31148,85119,35176,49214,83086,74104,53171,51352,51181,97109,58175,58200,121065,48211,113439,46211,81274,116249,62229,34200,53175,46141,77136,33143,51190,81198,33104,23169,43226,68195,33211,57166,54114,40154,45219,142144,24169,63145,83135,66179,51246,54279,113211,192065,55142,84105,24083,44335,53085,31194,26182,23119,160242,41154,64114,40148,46207,58134,44131,33272,51132,365258,51132,46342,25118,18067,62105,30147,73193,32969,37164,67470,30114,90160,161141,82210,33229,30147,56132,34150,33165,106153,34152,38157,54203,40357,31163,40090,50456,54197,28132,27147,47122,24135,27263,28150,54145,34122,38138,18100,18107,22125,46182,61291,30265,23112,24089,22138,47176,40184,36186,37163,38178,51308,31124,53118,49207,22119,59222,20153,39150,37179,37238,49116,51139,34167,53171,18053,47175,19093,43309,38128,31147,40169,52042,39184,45222,28375,49185,32174,38283,38160,29150,35200,32114,40209,19100,41208,34275,36150,39186,29211,34171,34152,35126,30168,21127,34168,32109,34127,32143],[150,89.72,179.44,89.52,90.78,179.64,314.37,136.41,463.43,593.25,322.24,276.78,263.82,269.46,225,361.44,505.56,381.06,230.3,227.35,463.43,314.37,390.56,322.42,334.4,221.25,538.34,265.08,385.2,371.7,361.44,587.28,322.42,318.29,454.3,788.64,230.3,230.85,204.4,165.2,432.99,404.1,449.1,275,716.21,556.4,274.68,359.28,322.42,228.1,177,940.59,428,655.98,737.85,449.1,783.04,863.93,316.4,500.17,222.95,278.46,371.7,545.64,978.8,160.64,581.14,626.52,449.1,234.7,356.72,673.65,550.42,354,1119.75,575.12,538.92,318.92,727.52,486.75,752.25,1261.5,1471.5,493.79,1295.8,642.56,486.75,884.73,359.2,404.1,546.78,1417,633.5,1018.75,734.24,807.12,657.16,422.46,351.76,709.6,1962,657.16,1085.52,665.21,595.36,1010.1,469.4,1195,502.26,610.22,1155.75,454.5,1247.13,1540,923.21,563.28,504.36,610.22,494.01,440.9,1064.16,610.22,611.91,1015.4,1293.57,719.82,1080,929.25,956.97,520.32,704.31,740.55,812.06,639.45,639.45,830.28,753.1,756.8,687.42,796.74,489.6,836.38,929.25,663.75,597.24,872.96,889.14,855.76,803,796.86,821.88,669.9,1293.84,728.32,981.2,1108.08,945.8,1263.84,836.43,1646.75,973.94,796.86,1371.75,1055.47,1124.48,1733.4,868.32,1151.02,682.02,1293.57,968.2,1134.77,1136.25,1461.24,973.36,3314.03,1062,1877.85,1368.32,1106.25,929.67,987.8,1100.55,1474.48,1327.5,947.25,1266.14,1106.25,1660.56,1084.59,1555.85,1127.36,1034.02,1180.14,1610.7,2317.21,1481.2,1817.53,1593.72,1731.45],[10.4,12.78,16.04,14.08,16.53,15.1,15.78,17.08,9.44,12.07,19.47,19.74,16.53,16.96,18.64,12.56,13.22,12.55,20.3,17.4,12.43,21.33,14.11,18.93,10.27,18.7,16.63,11.76,11.48,16,18.56,13.58,22.39,15.1,9.29,15.7,20.22,19.65,12.38,7.48,25.19,11.76,17.14,21.86,14.04,14.71,20.52,16.81,32.09,16.75,25,22.65,21.11,21.39,20.11,23.74,18.49,32.29,8,26.75,17.41,22.36,15.43,26.9,15.98,13.04,10.69,21.26,16.95,8.11,19.66,14.14,24.54,19.19,23.44,8.69,17.45,23.35,28.79,25.46,29.79,36.11,25.65,23.42,32.05,12.83,23.35,19.85,5.94,6.82,14.19,24.42,20.54,30.14,17.48,23.07,14.34,16.31,17.72,27.32,30.58,16.32,36.42,23.18,12.67,41.05,11.47,39.93,8.69,12.64,39.7,10.14,47.6,47.41,31.1,14.29,10.47,24.32,19.5,16.65,59.53,12.52,15.57,29.03,38.57,15.63,25.9,43.56,27.97,14.32,7.47,14.22,16.35,8.63,9.5,32.45,14.22,13.38,15,13.07,15.25,22.82,36.91,28.65,17.12,22.89,20.38,20.76,44.84,26.86,34.63,18.78,37.08,11.24,27.18,37.07,21.19,26.22,21.53,31.5,19.79,18.38,45.16,27.39,25.67,40.71,14.53,20.75,18.93,36.09,28.28,40.47,23.69,23.42,28.84,60.22,29.75,43.85,23.74,38.83,24.6,19.5,26,26.14,47.09,26,29.08,44.75,29.5,24.86,30.11,21.71,31.52,23.26,39.68,46.27,30.68,40.09,31.27,26.43],[1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,0,1,2,1,1,0,2,1,1,2,1,1,2,1,3,1,2,2,2,2,2,2,1,3,0,2,1,2,1,2,1,1,1,2,1,0,1,1,2,1,2,0,1,2,2,2,2,3,2,2,3,1,2,1,0,0,1,2,2,3,1,2,1,1,1,2,3,1,3,2,1,4,1,3,0,1,3,1,4,4,3,1,1,2,1,1,5,1,1,2,3,1,2,4,2,1,0,1,1,0,0,3,1,1,1,1,1,2,3,2,1,2,2,2,4,2,3,1,3,1,2,3,2,2,2,3,1,1,4,2,2,4,1,2,1,3,2,4,2,2,2,5,2,4,2,3,2,1,2,2,4,2,2,4,2,2,3,2,3,2,3,4,3,4,3,2],[5,3.97,3.97,3.95,5.08,6.98,4.98,5.09,7.43,7,5.09,4.23,5.79,7.98,4,6.04,8.43,6.47,6.21,4.09,9.43,7.98,4.76,8.21,6.36,5.85,9.79,5.84,7.56,7.26,7.03,12.79,10.21,6.06,7.26,8.86,8.21,7.23,5.18,7.26,5.62,7.98,7.98,10,15.43,8.56,7.16,7.98,6.21,7.12,6.85,8.96,9.56,5.09,5.84,12.98,10.79,4.09,6.04,9.09,6.92,10.28,8.26,9.09,17.79,5.03,9.3,7.44,9.98,9.39,14.19,15.98,5.47,8.85,9.96,9.22,14.98,11.11,7.09,4.85,6.85,6.09,10.9,7.98,9.36,6.03,9.85,13.43,8.98,7.98,7.41,11.9,20.05,13.15,18.18,6.97,15.39,16.39,8.79,11.87,15.9,13.39,6.05,6,7,4.62,14.39,6.92,12.13,12.39,7.25,14.09,7.24,6,20.72,13.39,14.41,14.39,13.98,10.82,10.87,14.39,12.41,15.15,8.58,9,15,6.85,24.11,9.67,13.29,16.87,12.55,13.53,13.53,14.77,14.86,17.46,11,13,16.16,21.8,9.85,10.85,9.53,17,18.47,22.01,10.03,18.85,20.13,17.57,9.58,17.1,18.92,8.23,13.46,34.53,11,13.41,27.85,17.85,8.85,26.18,12.03,17.63,22,32.85,17,9.58,21.68,6,28.09,26.86,25.46,43.23,7.85,22.63,36.55,11.85,25.85,19.98,21.57,30.53,15.85,19,30.73,9.85,30.77,28.03,36.41,25.67,26,29.08,21.26,14.46,33.46,38.87,36.85,36.89],[27.4,19.78,17.04,11.08,15.53,12.1,11.78,11.08,21.44,33.07,19.63,16.74,23.53,11.96,3.64,8.56,24.22,17.55,8.3,-0.6,17.43,14.33,5.39,10.47,4.27,4.7,19.93,-7.24,6.48,10,17.56,21.58,22.39,24.1,14.29,14.7,6.22,6.65,4.38,6.48,7.19,12.76,12.14,8.86,28.04,9.71,6.52,5.81,5.09,-5.25,1,17.65,19.11,-1.61,15.11,14.74,9.49,21.29,-8,25.75,-3.59,1.36,8.43,25.9,32.98,-16.96,15.69,14.26,-2.05,-2.89,5.66,10.14,7.54,1.19,14.44,7.69,6.45,-2.65,6.79,-3.54,8.79,10.11,20.65,-2.58,37.05,-0.17,6.35,12.85,-24.06,-20.18,-0.81,9.42,17.54,20.14,15.48,1.07,-3.66,-0.69,-9.28,8.32,20.58,-3.68,9.42,4.18,-9.33,-0.95,-3.53,5.93,-14.31,-11.36,4.7,-7.86,2.6,-2.59,10.1,-3.71,-6.53,-2.68,0.5,-12.35,5.53,-10.48,-11.43,11.03,16.57,-8.37,18.9,-0.44,13.97,-17.68,-10.53,-12.78,3.35,-14.37,-14.5,5.45,-6.78,-12.62,-5,-2.93,-6.75,3.82,-7.09,2.65,-31.88,10.89,10.38,-1.24,2.84,6.86,13.63,-11.22,1.08,-40.76,1.18,-3.93,5.19,5.22,0.53,9.5,0.79,-13.62,-0.84,3.39,0.67,7.71,-2.47,-1.25,-5.07,-2.91,2.28,-8.53,0.69,-3.58,-0.16,18.22,-11.25,7.85,8.74,-4.17,-6.4,-5.5,-2,8.14,2.09,0,-0.92,-14.25,4.5,-14.14,7.11,-30.29,-3.48,-15.74,4.68,5.27,-9.32,0.09,-12.73,-19.57],[&amp;ldquo;Researches_designs_develops_and_maintains_software_systems_along_with_hardware_development_for_medical_scientific_and_industrial_purposes&amp;rdquo;,&amp;ldquo;Applies_mathematical_theories_and_formulas_to_teach_or_solve_problems_in_a_business_educational_or_industrial_climate&amp;rdquo;,&amp;ldquo;Interprets_statistics_to_determine_probabilities_of_accidents_sickness_and_death_and_loss_of_property_from_theft_and_natural_disasters&amp;rdquo;,&amp;ldquo;Tabulates_analyzes_and_interprets_the_numeric_results_of_experiments_and_surveys&amp;rdquo;,&amp;ldquo;Plans_and_develops_computer_systems_for_businesses_and_scientific_institutions&amp;rdquo;,&amp;ldquo;Studies_the_physical_characteristics_motions_and_processes_of_the_earth&amp;rsquo;s_atmosphere&amp;rdquo;,&amp;ldquo;Studies_the_relationship_of_plants_and_animals_to_their_environment&amp;rdquo;,&amp;ldquo;Analyzes_and_records_historical_information_from_a_specific_era_or_according_to_a_particular_area_of_expertise&amp;rdquo;,&amp;ldquo;Diagnoses_and_treats_hearing_problems_by_attempting_to_discover_the_range_nature_and_degree_of_hearing_function&amp;rdquo;,&amp;ldquo;Assists_dentists_in_diagnostic_and_therapeutic_aspects_of_a_group_or_private_dental_practice&amp;rdquo;,&amp;ldquo;Studies_human_behavior_by_examining_the_interaction_of_social_groups_and_institutions&amp;rdquo;,&amp;ldquo;Prepares_and_analyzes_financial_reports_to_assist_managers_in_business_industry_and_government&amp;rdquo;,&amp;ldquo;Assists_attorneys_in_preparation_of_legal_documents;_collection_of_depositions_and_affidavits;_and_investigation_research_and_analysis_of_legal_issues&amp;rdquo;,&amp;ldquo;Researches_and_develops_theories_concerning_the_physical_forces_of_nature&amp;rdquo;,&amp;ldquo;Related_to_careers_in_portfolio_management_the_financial_planner_offers_a_broad_range_of_services_aimed_at_assisting_individuals_in_managing_and_planning_their_financial_future&amp;rdquo;,&amp;ldquo;Studies_questions_concerning_the_nature_of_intellectual_concepts_and_attempts_to_construct_rational_theories_concerning_our_understanding_of_the_world_around_us&amp;rdquo;,&amp;ldquo;Develops_individualized_programs_of_activity_for_mentally_physically_developmentally_and_emotionally_impaired_persons_to_aid_them_in_in_achieving_self-reliance&amp;rdquo;,&amp;ldquo;Monitors_counsels_and_reports_on_the_progress_of_individuals_who_have_been_released_from_correctional_institutions_to_serve_parole&amp;rdquo;,&amp;ldquo;Designs_develops_and_tests_new_technologies_concerned_with_the_manufacture_of_commercial_and_military_aircraft_and_spacecraft&amp;rdquo;,&amp;ldquo;Studies_and_analyzes_the_effects_of_resources_such_as_land_labor_and_raw_materials_on_costs_and_their_relation_to_industry_and_government&amp;rdquo;,&amp;ldquo;Assesses_hearing_speech_and_language_disabilities_and_provides_treatment._Assists_individuals_with_communication_disorders_through_diagnostic_techniques&amp;rdquo;,&amp;ldquo;Uses_principles_of_physics_and_mathematics_to_understand_the_workings_of_the_universe&amp;rdquo;,&amp;ldquo;Loan_officers_help_people_apply_for_loans._This_lets_people_do_things_like_buy_a_house_or_a_car_or_pay_for_college&amp;rdquo;,&amp;ldquo;Plans_drilling_locations_and_effective_production_methods_for_optimal_access_to_oil_and_natural_gas&amp;rdquo;,&amp;ldquo;Assesses_patients&amp;rsquo;_dietary_needs_plans_menus_and_instructs_patients_and_their_families_about_proper_nutritional_care&amp;rdquo;,&amp;ldquo;Transforms_scientific_and_technical_information_into_readily_understandable_language&amp;rdquo;,&amp;ldquo;Diagnoses_visual_disorders_and_prescribes_and_administers_corrective_and_rehabilitative_treatments&amp;rdquo;,&amp;ldquo;Organizes_and_lists_the_instructions_for_computers_to_process_data_and_solve_problems_in_logical_order&amp;rdquo;,&amp;ldquo;Selects_and_organizes_materials_to_make_information_available_to_the_public&amp;rdquo;,&amp;ldquo;Performs_lab_analysis_for_diagnosis_and_treatment_of_disease&amp;rdquo;,&amp;ldquo;Transcribes_testimony_judicial_decisions_and_other_proceedings_of_a_court_of_law&amp;rdquo;,&amp;ldquo;Treats_physical_problems_by_manipulating_various_parts_of_the_body_especially_the_spinal_column&amp;rdquo;,&amp;ldquo;Plans_and_supervises_the_building_of_roads_bridges_tunnels_and_buildings&amp;rdquo;,&amp;ldquo;Transcribes_dictations_prepares_correspondence_and_assists_physicians_and_other_medical_scientists_in_compiling_reports_articles_speeches_and_conference_proceedings&amp;rdquo;,&amp;ldquo;Conducts_routine_laboratory_tests_and_analysis_used_in_the_detection_diagnosis_and_treatment_of_disease&amp;rdquo;,&amp;ldquo;Advises_physicians_and_patients_on_the_affects_of_drugs_and_medications;_prepares_and_dispenses_prescriptions&amp;rdquo;,&amp;ldquo;Plans_for_optimum_use_of_facilities_and_personnel_to_improve_industrial_efficiency&amp;rdquo;,&amp;ldquo;Assesses_an_establishment&amp;rsquo;s_needs_and_available_products_and_buys_raw_materials_equipment_and_machinery_furniture_and_other_supplies_accordingly&amp;rdquo;,&amp;ldquo;Maintains_financial_records_and_prepares_statements_of_a_company&amp;rsquo;s_income_and_daily_operating_expenses&amp;rdquo;,&amp;ldquo;Maintains_complete_accurate_and_up-to-date_medical_records_for_use_in_treatment_billing_and_statistical_surveys&amp;rdquo;,&amp;ldquo;Supervises_the_educational_curricula_and_day-to-day_activities_in_elementary_and_secondary_schools_as_well_as_colleges_and_universities&amp;rdquo;,&amp;ldquo;Makes_and_repairs_dentures_crowns_and_orthodontic_devices&amp;rdquo;,&amp;ldquo;Determines_tax_liability_and_collects_taxes_from_individuals_or_businesses&amp;rdquo;,&amp;ldquo;Creating_and_maintaining_layout_navigation_and_interactivity_of_intranet_and_internet_websites&amp;rdquo;,&amp;ldquo;Plans_and_directs_treatment_to_improve_mobility_and_alleviate_pain_in_persons_disabled_by_injury_or_disease&amp;rdquo;,&amp;ldquo;Helps_students_with_educational_and_social_problems_and_provides_vocational_guidance&amp;rdquo;,&amp;ldquo;Supervises_the_filming_and_editing_of_motion_pictures_for_entertainment_business_and_educational_purposes&amp;rdquo;,&amp;ldquo;Studies_the_life_functions_of_plants_and_animals_both_in_their_natural_habitats_and_under_experimental_or_abnormal_conditions&amp;rdquo;,&amp;ldquo;Conducts_research_designs_and_monitors_the_operation_and_maintenance_of_nuclear_reactors_and_power_plant_equipment&amp;rdquo;,&amp;ldquo;Assesses_and_analyzes_the_risks_inherent_in_insuring_potential_policy_holders_before_making_recommendations_to_the_insurance_companies_that_employ_them&amp;rdquo;,&amp;ldquo;Designs_and_develops_manufactured_products&amp;rdquo;,&amp;ldquo;Diagnoses_and_corrects_deviations_in_dental_growth_development_and_position&amp;rdquo;,&amp;ldquo;Plans_and_directs_activities_of_workers_and_arranges_for_the_exhibition_of_articles_of_interest_to_museum_visitors&amp;rdquo;,&amp;ldquo;Arbitrates_legal_matters_coming_under_the_jurisdiction_of_the_federal_government_using_a_thorough_knowledge_of_federal_statutes_and_legal_precedent&amp;rdquo;,&amp;ldquo;Interviews_prospective_employees_administers_tests_and_provides_information_about_company_policies_and_available_jobs&amp;rdquo;,&amp;ldquo;Studies_and_analyzes_the_physical_properties_of_the_earth&amp;rsquo;s_surface_adding_to_our_knowledge_of_oil_and_gas_exploration_techniques&amp;rdquo;,&amp;ldquo;Diagnoses_and_treats_problems_of_the_feet_through_corrective_devices_medication_therapy_and_surgery&amp;rdquo;,&amp;ldquo;Collects_and_evaluates_data_to_make_recommendations_to_businesses_concerning_trends_in_consumer_purchasing&amp;rdquo;,&amp;ldquo;Manufactures_and_repairs_rings_bracelets_pins_and_necklaces_using_precious_or_semi-precious_metals_and_stones&amp;rdquo;,&amp;ldquo;Studies_the_social_customs_language_and_physical_attributes_of_people_throughout_the_world&amp;rdquo;,&amp;ldquo;Prepares_drawings_according_to_the_specifications_of_scientists_architects_and_engineers&amp;rdquo;,&amp;ldquo;Develops_mechanical_products_and_coordinates_the_operation_and_repair_of_power-using_and_power-producing_machinery&amp;rdquo;,&amp;ldquo;Fills_lens_prescriptions_and_fits_eyeglasses_and_contact_lenses&amp;rdquo;,&amp;ldquo;Studies_analyzes_and_collects_data_based_on_research_of_ancient_often_preliterate_cultures&amp;rdquo;,&amp;ldquo;Ministers_to_the_care_of_animals_through_the_use_of_preventative_and_diagnostic_techniques&amp;rdquo;,&amp;ldquo;Prepares_and_edits_typed_or_electronic_copies_of_handwritten_printed_or_magnetically_recorded_documents&amp;rdquo;,&amp;ldquo;Creates_hair_styles_and_advises_clients_about_caring_for_their_hair_between_appointments&amp;rdquo;,&amp;ldquo;Leads_a_congregation_in_worship_and_other_spiritual_services_provides_moral_guidance_to_members_and_participates_in_community_outreach&amp;rdquo;,&amp;ldquo;Develops_substances_through_research_of_properties_and_composition;_assists_industry_and_individuals_by_study_of_chemical_structures_of_products&amp;rdquo;,&amp;ldquo;Maintains_and_repairs_band_and_orchestral_instruments_of_all_kinds&amp;rdquo;,&amp;ldquo;Studies_the_behavior_life_processes_origins_and_diseases_of_animals&amp;rdquo;,&amp;ldquo;Conducts_research_into_range_problems_and_manages_range_lands_to_make_efficient_use_of_livestock_and_wildlife_without_destroying_their_habitat&amp;rdquo;,&amp;ldquo;Assists_individuals_families_and_groups_in_need_of_counseling_and_special_social_services&amp;rdquo;,&amp;ldquo;Plans_and_assembles_theatrical_sets_for_film_television_and_stage_productions&amp;rdquo;,&amp;ldquo;Examines_cleans_and_repairs_teeth_and_diagnoses_and_treats_diseases_and_abnormalities_of_the_mouth&amp;rdquo;,&amp;ldquo;Shampoos_trims_cuts_and_styles_hair_according_to_the_desires_of_customers&amp;rdquo;,&amp;ldquo;Examines_places_of_business_to_ensure_that_equipment_and_work_conditions_do_not_endanger_the_health_and_safety_of_employees&amp;rdquo;,&amp;ldquo;Conducts_research_and_plans_and_directs_design_testing_and_manufacture_of_electrical_equipment&amp;rdquo;,&amp;ldquo;Studies_human_behavior_emotion_and_mental_processes_and_provides_counseling_and_therapy_for_individuals&amp;rdquo;,&amp;ldquo;Plans_and_directs_the_editorial_activities_of_various_publications&amp;rdquo;,&amp;ldquo;Creates_fiction_and_non-fiction_books_either_on_assignment_from_editors_or_independently&amp;rdquo;,&amp;ldquo;Counsels_clients_in_legal_matters;_using_interpretation_of_laws_and_rulings_to_advise_and_represent_businesses_and_individuals&amp;rdquo;,&amp;ldquo;Performs_examinations_diagnoses_medical_conditions_and_prescribes_treatment_for_individuals_suffering_from_injury_discomfort_or_disease&amp;rdquo;,&amp;ldquo;Assists_engineers_in_planning_design_and_development_by_applying_a_practical_knowledge_of_civil_mechanical_or_industrial_engineering&amp;rdquo;,&amp;ldquo;Aids_in_the_performance_of_essential_procedures_which_free_physicians_to_attend_to_more_specialized_aspects_of_their_work&amp;rdquo;,&amp;ldquo;Cashes_checks_makes_deposits_and_withdrawals_and_handles_a_variety_of_other_transactions_for_bank_customers&amp;rdquo;,&amp;ldquo;Creates_artwork_independently_usually_in_the_form_of_painting_drawing_sculpture_or_other_visual_mediums&amp;rdquo;,&amp;ldquo;Treats_and_rehabilitates_patients_suffering_from&lt;em&gt;cardiopulmonary&lt;/em&gt;(heart_and_lung)_ailments_which_interfere_with_normal_breathing&amp;rdquo;,&amp;ldquo;Participates_in_the_assembly_of_books_or_magazines_for_commercial_printing_companies&amp;rdquo;,&amp;ldquo;Develops_photographic_film_makes_prints_and_slides_prepares_enlargements_and_retouches_photographs&amp;rdquo;,&amp;ldquo;Supervises_elementary_school_students_in_the_classroom_school_yard_and_in_the_cafeteria_operates_audio-visual_equipment_records_grades_and_prepares_educational_materials&amp;rdquo;,&amp;ldquo;Studies_diagnoses_and_treats_mental_emotional_and_behavioral_disorders&amp;rdquo;,&amp;ldquo;Installs_and_services_air-conditioning_and_furnace_systems_in_businesses_and_residences&amp;rdquo;,&amp;ldquo;Assists_physicians_in_administering_holistic_medical_care_and_treatment_to_assigned_patients_in_clinics_hospitals_public_health_centers_and_health_maintenance_organizations&amp;rdquo;,&amp;ldquo;Monitors_and_controls_processes_and_equipment_to_remove_harmful_waste_materials_from_sewage&amp;rdquo;,&amp;ldquo;Oversees_the_successful_and_profitable_operation_of_hotels_and_motels&amp;rdquo;,&amp;ldquo;Installs_services_cleans_tests_and_repairs_telephones_and_switchboard_systems&amp;rdquo;,&amp;ldquo;Maintains_inspects_and_repairs_industrial_machinery&amp;rdquo;,&amp;ldquo;Runs_and_maintains_the_equipment_used_to_transmit_radio_and_television_messages&amp;rdquo;,&amp;ldquo;Introduces_children_to_the_basics_of_mathematics_language_science_and_social_studies_and_assists_other_aspects_of_child_development&amp;rdquo;,&amp;ldquo;Diagnoses_ailments_and_performs_operations_to_repair_reconstruct_remove_or_replace_organs_limbs_and_bodily_systems&amp;rdquo;,&amp;ldquo;Installs_and_repairs_electronic_equipment_for_military_installations_manufacturers_and_businesses&amp;rdquo;,&amp;ldquo;Sells_insurance_and_advises_clients_about_amount_and_type_of_coverage_based_on_needs_and_circumstances&amp;rdquo;,&amp;ldquo;Greets_visitors_to_offices_answers_questions_and_refers_customers_to_appropriate_staff&amp;rdquo;,&amp;ldquo;Receives_payments_makes_change_and_provides_receipts_for_goods_sold&amp;rdquo;,&amp;ldquo;Negotiates_to_procure_accounts_and_supervises_advertising_campaigns_for_products_companies_and_organizations&amp;rdquo;,&amp;ldquo;Performs_maintenance_and_repairs_on_coin-operated_vending_and_amusement_machines&amp;rdquo;,&amp;ldquo;Plans_and_designs_spaces_to_be_constructed_or_remodeled_according_to_specifications_of_clients&amp;rdquo;,&amp;ldquo;Develops_assembles_and_tests_electrical_equipment_according_to_principles_of_electrical_engineering&amp;rdquo;,&amp;ldquo;Repairs_malfunctions_maintains_service_according_to_manufacturers&amp;rsquo;_schedules_and_sometimes_installs_computers_and_peripheral_equipment&amp;rdquo;,&amp;ldquo;Facilitates_the_purchase_and_sale_of_stocks_bonds_and_other_securities_for_individual_and_institutional_clients&amp;rdquo;,&amp;ldquo;Operates_industrial_trucks_and_tractors_to_move_products_and_raw_materials_for_manufacturing_firms&amp;rdquo;,&amp;ldquo;Helps_governmental_bodies_businesses_and_individuals_maintain_a_positive_image_with_the_public&amp;rdquo;,&amp;ldquo;Formulates_the_policies_and_directs_the_operations_of_private_and_publicly-held_companies&amp;rdquo;,&amp;ldquo;Supervises_the_work_of_employees_and_ensures_that_equipment_and_materials_are_being_used_properly_and_effectively&amp;rdquo;,&amp;ldquo;Adjusts_piano_strings_to_achieve_proper_musical_pitch&amp;rdquo;,&amp;ldquo;Builds_new_furniture_and_restores_worn_furniture_using_a_thorough_knowledge_of_fabrics_and_manufacturing_techniques&amp;rdquo;,&amp;ldquo;Installs_repairs_and_maintains_residential_and_commercial_phone_systems&amp;rdquo;,&amp;ldquo;Researches_methods_to_improve_quantity_and_quality_of_yields_from_farm_crops_and_livestock_and_attempts_to_find_practical_solutions_to_problems_in_agriculture&amp;rdquo;,&amp;ldquo;Typesetters_operate_keyboards_to_prepare_print_documents_while_compositors_lay_out_pages_check_proofs_and_make_corrections&amp;rdquo;,&amp;ldquo;Operates_an_aircraft_to_transport_passengers_and_cargo_to_appointed_destinations&amp;rdquo;,&amp;ldquo;Performs_major_and_routine_maintenance_on_a_variety_of_electrical_home_appliances&amp;rdquo;,&amp;ldquo;Repairs_and_maintains_business_machines&amp;rdquo;,&amp;ldquo;Prepares_bodies_for_burial_and_arranges_and_directs_funerals&amp;rdquo;,&amp;ldquo;Acts_as_intermediary_between_buyer_and_seller_in_real_estate_transactions_usually_by_being_the_prime_salesperson_of_a_property&amp;rdquo;,&amp;ldquo;Operates_manual_or_computerized_telephone_switchboards_and_assists_in_the_placement_of_local_and_long_distance_calls&amp;rdquo;,&amp;ldquo;Assists_doctors_and_registered_nurses_in_the_care_of_physically_or_mentally_ill_patients&amp;rdquo;,&amp;ldquo;Prepares_and_delivers_news_and_related_presentations_over_the_air_on_radio_and_television&amp;rdquo;,&amp;ldquo;Establishes_official_land_and_aquatic_boundaries_measures_construction_and_mining_sites_writes_technical_property_descriptions_for_deeds_and_leases_and_prepares_maps_and_charts&amp;rdquo;,&amp;ldquo;Monitors_the_movement_of_shipments_of_merchandise_into_and_out_of_places_of_business&amp;rdquo;,&amp;ldquo;Follows_design_instructions_operates_a_sewing_machine_to_join_reinforce_and_decorate_parts_of_garments_or_other_textiles&amp;rdquo;,&amp;ldquo;Constructs_and_repairs_precision_tools_gauges_holding_devices_and_stamping_tools_for_the_machine_industry&amp;rdquo;,&amp;ldquo;Protects_property_from_damages_incurred_by_theft_fire_and_vandalism&amp;rdquo;,&amp;ldquo;Assembles_parts_or_contributes_to_the_final_assembly_of_automobiles_and_trucks&amp;rdquo;,&amp;ldquo;Works_on_sub-assembly_or_final_assembly_of_products_such_as_machinery_electronic_equipment_or_aircraft&amp;rdquo;,&amp;ldquo;Operates_an_electric_diesel-electric_or_gas-turbine-_electric_locomotive_to_transport_passengers_and_freight&amp;rdquo;,&amp;ldquo;Operates_computerized_machines_in_the_manufacture_of_industrial_parts&amp;rdquo;,&amp;ldquo;Operates_machinery_in_manufacturing_plants_for_fabrication_of_industrial_parts&amp;rdquo;,&amp;ldquo;Takes_customer_orders_serves_food_and_drink_and_prepares_meal_checks&amp;rdquo;,&amp;ldquo;Mixes_and_serves_drinks_to_customers_of_a_tavern_restaurant_or_lounge&amp;rdquo;,&amp;ldquo;Cleans_offices_and_other_spaces_within_buildings_and_keeps_areas_in_good_condition&amp;rdquo;,&amp;ldquo;Builds_and_repairs_water_waste_disposal_drainage_and_gas_delivery_systems_for_residential_commercial_and_industrial_structures&amp;rdquo;,&amp;ldquo;Designs_articles_or_complete_lines_of_clothing_for_men_women_or_children&amp;rdquo;,&amp;ldquo;Uses_shutter-operated_cameras_and_photographic_emulsions_to_visually_portray_a_variety_of_subjects&amp;rdquo;,&amp;ldquo;Refurbishes_and_mends_worn_shoes_saddles_and_boots&amp;rdquo;,&amp;ldquo;Assists_practical_nurses_in_caring_for_patients._Nursing_homes_and_hospitals_are_the_primary_employers_of_nurse&amp;rsquo;s_aides&amp;rdquo;,&amp;ldquo;Organizes_and_supervises_a_variety_of_leisure_activities_including_sports_arts_crafts_drama_singing_dancing_and_story_telling&amp;rdquo;,&amp;ldquo;Maps_layout_and_installs_and_repairs_electrical_wiring_and_fixtures&amp;rdquo;,&amp;ldquo;Tends_to_the_care_and_comfort_of_passengers_on_commercial_and_corporate_aircraft&amp;rdquo;,&amp;ldquo;Measures_cuts_and_installs_glass_in_residential_and_commercial_buildings&amp;rdquo;,&amp;ldquo;Cleanses_nuclear_power_plant_equipment_and_personnel_of_irradiated_material&amp;rdquo;,&amp;ldquo;Mends_cosmetic_and_structural_damage_to_car_truck_and_bus_chassis&amp;rdquo;,&amp;ldquo;Represents_wholesalers_who_distribute_products_to_stores_manufacturers_and_businesses&amp;rdquo;,&amp;ldquo;Operates_drilling_machines_to_place_holes_in_metal_or_nonmetal_pieces_according_to_predetermined_specifications&amp;rdquo;,&amp;ldquo;Performs_scheduled_inspections_maintenance_and_repairs_on_commercial_and_private_aircraft&amp;rdquo;,&amp;ldquo;Orders_merchandise_and_maintains_inventory_control_for_wholesale_and_retail_sales_firms&amp;rdquo;,&amp;ldquo;Drives_limousines_or_other_vehicles_to_transport_passengers_to_and_from_specified_locations&amp;rdquo;,&amp;ldquo;Manages_the_successful_operation_of_a_crop_livestock_dairy_or_poultry_farm&amp;rdquo;,&amp;ldquo;Provides_courteous_and_efficient_service_to_customers_in_retail_stores&amp;rdquo;,&amp;ldquo;Supervises_inmates&amp;rsquo;_activities_and_enforces_regulations_in_jails_prisons_and_other_correctional_facilities&amp;rdquo;,&amp;ldquo;Installs_and_prepares_surfaces_of_drywall_panels_for_commercial_or_residential_interiors&amp;rdquo;,&amp;ldquo;Lays_tile_or_carpets_in_homes_and_businesses&amp;rdquo;,&amp;ldquo;Entertains_informs_and_instructs_audiences_by_interpreting_dramatic_roles_on_stage_film_television_or_radio&amp;rdquo;,&amp;ldquo;Operates_monitors_and_repairs_power_plants_and_industrial_heating_cooling_and_ventilation_systems&amp;rdquo;,&amp;ldquo;Transports_passengers_according_to_a_specific_schedule_along_metropolitan_and_community_routes&amp;rdquo;,&amp;ldquo;Patrols_roads_and_highways_and_enforces_traffic_regulations_and_criminal_statutes&amp;rdquo;,&amp;ldquo;Cleans_the_plates_glasses_and_silverware_used_by_patrons_of_an_eating_establishment_and_the_pots_pans_and_cooking_utensils_used_by_chefs&amp;rdquo;,&amp;ldquo;Erects_structures_such_as_fireplaces_and_walls_with_brick_and_other_masonry_materials&amp;rdquo;,&amp;ldquo;May_perform_a_variety_of_services_including_cleaning_and_upkeep_for_residential_and_institutional_employers&amp;rdquo;,&amp;ldquo;Negotiates_contracts_with_clients_for_advertising_in_publications_and_on_radio_and_television&amp;rdquo;,&amp;ldquo;Operates_16-wheeled_tractor-trailer_to_transport_durable_and_perishable_goods_from_producers_to_consumers&amp;rdquo;,&amp;ldquo;Makes_arrangements_for_travel_according_to_the_specific_needs_of_individuals_and_businesses&amp;rdquo;,&amp;ldquo;Operates_one_or_more_machines_used_in_extractive_or_construction_work&amp;rdquo;,&amp;ldquo;Delivers_and_collects_mail_along_prearranged_rural_and_urban_routes&amp;rdquo;,&amp;ldquo;Assists_in_the_construction_repairing_and_remodeling_of_buildings_and_other_structures&amp;rdquo;,&amp;ldquo;Protects_individuals_and_saves_lives_and_property_from_the_ravages_of_fire&amp;rdquo;,&amp;ldquo;Selects_and_plays_records_or_tapes;_comments_on_areas_of_interest_to_a_particular_radio_audience&amp;rdquo;,&amp;ldquo;Provides_protection_against_crime_investigates_criminal_activity_and_works_with_the_public_on_crime-prevention_measures&amp;rdquo;,&amp;ldquo;Collects_refuse_on_a_designated_municipal_route_and_transports_trash_to_disposal_plants_or_landfill_areas&amp;rdquo;,&amp;ldquo;Instructs_performers_and_develops_and_interprets_routines_for_stage_and_other_presentations&amp;rdquo;,&amp;ldquo;Applies_the_plaster_finish_to_interior_walls_and_ceilings_and_cement_finish_and_stucco_to_exterior_surfaces&amp;rdquo;,&amp;ldquo;Prepares_meat_for_sale_to_distributors_supermarket_customers_and_other_consumers&amp;rdquo;,&amp;ldquo;Diagnoses_problems_with_automotive_vehicles_makes_repairs_and_performs_routine_maintenance&amp;rdquo;,&amp;ldquo;Directs_and_takes_part_in_activities_involved_in_the_raising_of_cattle_for_milk_production&amp;rdquo;,&amp;ldquo;Photographs_newsworthy_events_for_publication_in_newspapers_and_magazines&amp;rdquo;,&amp;ldquo;Cares_for_infants_and_toddlers_when_parents_are_at_work_or_are_unable_to_do_so_for_other_reasons&amp;rdquo;,&amp;ldquo;Constructs_installs_and_maintains_sheet_metal_products_for_home_commercial_and_industrial_use&amp;rdquo;,&amp;ldquo;Covers_newsworthy_events_for_newspapers_magazines_and_television_news_programs&amp;rdquo;,&amp;ldquo;Performs_any_number_of_tasks_involved_in_the_operation_of_ships_boats_barges_or_dredges&amp;rdquo;,&amp;ldquo;Loads_and_unloads_cargo_from_vessels_routes_cargo_to_proper_locations&amp;rdquo;,&amp;ldquo;Assists_construction_trade_workers_by_performing_a_wide_variety_of_tasks_requiring_physical_labor&amp;rdquo;,&amp;ldquo;Monitors_public_utility_meters_and_records_volume_of_consumption_by_customers&amp;rdquo;,&amp;ldquo;Prepares_surfaces_and_applies_paints_varnishes_and_finishes_to_the_interiors_and_exteriors_of_houses_and_other_structures&amp;rdquo;,&amp;ldquo;Joins_or_repairs_metal_surfaces_through_the_application_of_heat&amp;rdquo;,&amp;ldquo;Attends_to_situations_which_demand_immediate_medical_attention_such_as_automobile_accidents_heart_attacks_and_gunshot_wounds&amp;rdquo;,&amp;ldquo;Operates_a_taxi_cab_over_the_streets_and_roads_of_a_municipality_picking_up_and_dropping_off_passengers_by_request&amp;rdquo;,&amp;ldquo;Installs_roofs_on_new_buildings_performs_repairs_on_old_roofs_and_re-roofs_old_buildings&amp;rdquo;,&amp;ldquo;Fells_cuts_and_transports_timber_to_be_processed_into_lumber_paper_and_other_wood_products&amp;rdquo;,&amp;ldquo;Raises_the_steel_framework_of_buildings_bridges_and_other_structures&amp;rdquo;,&amp;ldquo;Performs_routine_physical_labor_and_maintenance_on_oil_rigs_and_pipelines_both_on_and_off_shore&amp;rdquo;]],&amp;ldquo;container&amp;rdquo;:&amp;rdquo;&lt;table class=\&#34;display\&#34;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt; &amp;lt;\/th&amp;gt;\n      &lt;th&gt;Index&amp;lt;\/th&amp;gt;\n      &lt;th&gt;Job_Title&amp;lt;\/th&amp;gt;\n      &lt;th&gt;Overall_Score&amp;lt;\/th&amp;gt;\n      &lt;th&gt;Average_Income(USD)&amp;lt;\/th&amp;gt;\n      &lt;th&gt;Work_Environment&amp;lt;\/th&amp;gt;\n      &lt;th&gt;Stress_Level&amp;lt;\/th&amp;gt;\n      &lt;th&gt;Stress_Category&amp;lt;\/th&amp;gt;\n      &lt;th&gt;Physical_Demand&amp;lt;\/th&amp;gt;\n      &lt;th&gt;Hiring_Potential&amp;lt;\/th&amp;gt;\n      &lt;th&gt;Description&amp;lt;\/th&amp;gt;\n    &amp;lt;\/tr&amp;gt;\n  &amp;lt;\/thead&amp;gt;\n&amp;lt;\/table&amp;gt;&amp;ldquo;,&amp;ldquo;options&amp;rdquo;:{&amp;ldquo;autoWidth&amp;rdquo;:true,&amp;ldquo;columnDefs&amp;rdquo;:[{&amp;ldquo;width&amp;rdquo;:&amp;ldquo;100%&amp;rdquo;,&amp;ldquo;targets&amp;rdquo;:[1,3]},{&amp;ldquo;className&amp;rdquo;:&amp;ldquo;dt-right&amp;rdquo;,&amp;ldquo;targets&amp;rdquo;:[1,3,4,5,6,7,8,9]},{&amp;ldquo;orderable&amp;rdquo;:false,&amp;ldquo;targets&amp;rdquo;:0}],&amp;ldquo;order&amp;rdquo;:[],&amp;ldquo;orderClasses&amp;rdquo;:false}},&amp;ldquo;evals&amp;rdquo;:[],&amp;ldquo;jsHooks&amp;rdquo;:[]}&lt;/script&gt;&lt;!--/html_preserve--&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;We have 200 observations (200 jobs) and 10 variables (information about the jobs).&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;We have 200 observations (200 jobs) and 10 variables (information about the jobs).&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;str(job_data)
 &lt;/code&gt;&lt;/pre&gt;
@@ -693,28 +629,24 @@ library(DT)
 ##  $ Physical_Demand    : num  5 3.97 3.97 3.95 5.08 6.98 4.98 5.09 7.43 7 ...
 ##  $ Hiring_Potential   : num  27.4 19.8 17 11.1 15.5 ...
 ##  $ Description        : chr  &amp;quot;Researches_designs_develops_and_maintains_software_systems_along_with_hardware_development_for_medical_scientif&amp;quot;| __truncated__ &amp;quot;Applies_mathematical_theories_and_formulas_to_teach_or_solve_problems_in_a_business_educational_or_industrial_climate&amp;quot; &amp;quot;Interprets_statistics_to_determine_probabilities_of_accidents_sickness_and_death_and_loss_of_property_from_thef&amp;quot;| __truncated__ &amp;quot;Tabulates_analyzes_and_interprets_the_numeric_results_of_experiments_and_surveys&amp;quot; ...
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;prepare-the-data&#34;&gt;Prepare the data&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Remove Index variable, which contains the rank-ordering of the jobs&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Remove Index variable, which contains the rank-ordering of the jobs&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;job_data$Index &amp;lt;- NULL
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Turn Stress_Category into a factor&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Turn Stress_Category into a factor&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# turn Stress_Category into a factor
 job_data$Stress_Category &amp;lt;- factor(job_data$Stress_Category)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Remove some of the unneccessary &lt;em&gt;punction,&lt;/em&gt; &lt;em&gt;contractions,&lt;/em&gt; and &lt;em&gt;conjunctions&lt;/em&gt; from the job description variable using &lt;code&gt;gsub&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Remove some of the unneccessary &lt;em&gt;punction,&lt;/em&gt; &lt;em&gt;contractions,&lt;/em&gt; and &lt;em&gt;conjunctions&lt;/em&gt; from the job description variable using &lt;code&gt;gsub&lt;/code&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# remove the underscores in the job descriptions using the gsub() function
 job_data$Description &amp;lt;- gsub(&amp;quot;_&amp;quot;, &amp;quot; &amp;quot;, job_data$Description)
@@ -728,23 +660,22 @@ job_data$Description &amp;lt;- gsub(&amp;quot; the &amp;quot;, &amp;quot; &amp;q
 job_data$Description &amp;lt;- gsub(&amp;quot; for &amp;quot;, &amp;quot; &amp;quot;, job_data$Description)
 job_data$Description &amp;lt;- gsub(&amp;quot; from &amp;quot;, &amp;quot; &amp;quot;, job_data$Description)
 job_data$Description &amp;lt;- gsub(&amp;quot; with &amp;quot;, &amp;quot; &amp;quot;, job_data$Description)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&#34;process-text-data-for-analysis&#34;&gt;Process text data for analysis&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Install &lt;code&gt;tm&lt;/code&gt; package&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Install &lt;code&gt;tm&lt;/code&gt; package&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# install.packages(&amp;quot;tm&amp;quot;, repos = &amp;quot;http://cran.us.r-project.org&amp;quot;)
 # requires R V.3.3.1 +
 library(tm)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;First step for text mining is to convert text features (text elements) into a corpus object, which is a collection of text documents.&lt;/li&gt;
-&lt;li&gt;From homework: &lt;em&gt;Convert the textual JD meta-data into a corpus object.&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;First step for text mining is to convert text features (text elements) into a corpus object, which is a collection of text documents.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;From homework: &lt;em&gt;Convert the textual JD meta-data into a corpus object.&lt;/em&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;job_data_corpus &amp;lt;- Corpus(VectorSource(job_data$Description))  
 ## VectorSource() interprets each element of the vector x as a document
@@ -756,11 +687,9 @@ print(job_data_corpus)
 &lt;pre&gt;&lt;code&gt;## &amp;lt;&amp;lt;SimpleCorpus&amp;gt;&amp;gt;
 ## Metadata:  corpus specific: 1, document level (indexed): 0
 ## Content:  documents: 200
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Each document represents a single description for a job. We have 200 jobs in our dataset, thus 200 documents corresponding to 200 job descriptions.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Each document represents a single description for a job. We have 200 jobs in our dataset, thus 200 documents corresponding to 200 job descriptions.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;inspect(job_data_corpus[1:3])
 &lt;/code&gt;&lt;/pre&gt;
@@ -772,12 +701,11 @@ print(job_data_corpus)
 ## [1] Researches designs develops maintains software systems along hardware development medical scientific industrial purposes
 ## [2] Applies mathematical theories formulas to teach or solve problems in a business educational or industrial climate       
 ## [3] Interprets statistics to determine probabilities of accidents sickness death loss of property theft natural disasters
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Use &lt;code&gt;tm_map()&lt;/code&gt; function for cleaning the corpus document.&lt;/li&gt;
-&lt;li&gt;From homework: &lt;em&gt;Triage some of the irrelevant punctuation and other symbols in the corpus document, change all text to lower case, etc.&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Use &lt;code&gt;tm_map()&lt;/code&gt; function for cleaning the corpus document.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;From homework: &lt;em&gt;Triage some of the irrelevant punctuation and other symbols in the corpus document, change all text to lower case, etc.&lt;/em&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;corpus_clean &amp;lt;- tm_map(job_data_corpus, tolower)  ## changed all the characters to lower case
 
@@ -786,11 +714,9 @@ corpus_clean &amp;lt;- tm_map(corpus_clean, removePunctuation) ## removed all pu
 corpus_clean &amp;lt;- tm_map(corpus_clean, removeNumbers) ## remove all numbers 
 
 corpus_clean &amp;lt;- tm_map(corpus_clean, stripWhitespace) ## remove all extra white spaces  (typically created by deleting punctuations)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Inspect the corpus to make sure everything looks alright&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Inspect the corpus to make sure everything looks alright&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;inspect(corpus_clean[21:27])
 &lt;/code&gt;&lt;/pre&gt;
@@ -806,19 +732,16 @@ corpus_clean &amp;lt;- tm_map(corpus_clean, stripWhitespace) ## remove all extra
 ## [5] assesses patients dietary needs plans menus instructs patients their families about proper nutritional care                               
 ## [6] transforms scientific technical information into readily understandable language                                                          
 ## [7] diagnoses visual disorders prescribes administers corrective rehabilitative treatments
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;DocumentTermMatrix()&lt;/code&gt; function can successfully tokenize the job description into words. It can count frequent terms in each document in the corpus object.&lt;/li&gt;
-&lt;li&gt;From homework: &lt;em&gt;Tokenize the job descriptions into words.&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;DocumentTermMatrix()&lt;/code&gt; function can successfully tokenize the job description into words. It can count frequent terms in each document in the corpus object.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;From homework: &lt;em&gt;Tokenize the job descriptions into words.&lt;/em&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;job_data_dtm &amp;lt;- DocumentTermMatrix(corpus_clean)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Inspect to make sure DocumentTermMatrix looks correct&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Inspect to make sure DocumentTermMatrix looks correct&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;head(job_data_dtm$dimnames$Terms)
 &lt;/code&gt;&lt;/pre&gt;
@@ -854,7 +777,8 @@ corpus_clean &amp;lt;- tm_map(corpus_clean, stripWhitespace) ## remove all extra
 ##   52     0       0           1        0        0
 ##   62     0       0           0        1        0
 ##   69     0       0           0        1        0
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;visualize-job-description-text&#34;&gt;Visualize Job Description Text&lt;/h2&gt;
 
@@ -877,8 +801,7 @@ ggplotly(h1)
 &lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-609b887a6ec892720f34&#34;&gt;{&amp;ldquo;x&amp;rdquo;:{&amp;ldquo;data&amp;rdquo;:[{&amp;ldquo;orientation&amp;rdquo;:&amp;ldquo;v&amp;rdquo;,&amp;ldquo;width&amp;rdquo;:[0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999],&amp;ldquo;base&amp;rdquo;:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],&amp;ldquo;x&amp;rdquo;:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],&amp;ldquo;y&amp;rdquo;:[9,14,10,9,11,9,13,12,11,10,11,13,20,10,11,15,9,10,19,13],&amp;ldquo;text&amp;rdquo;:[&amp;ldquo;word: according&lt;br /&gt;freq:  9&amp;rdquo;,&amp;ldquo;word: assists&lt;br /&gt;freq: 14&amp;rdquo;,&amp;ldquo;word: businesses&lt;br /&gt;freq: 10&amp;rdquo;,&amp;ldquo;word: commercial&lt;br /&gt;freq:  9&amp;rdquo;,&amp;ldquo;word: develops&lt;br /&gt;freq: 11&amp;rdquo;,&amp;ldquo;word: diagnoses&lt;br /&gt;freq:  9&amp;rdquo;,&amp;ldquo;word: equipment&lt;br /&gt;freq: 13&amp;rdquo;,&amp;ldquo;word: individuals&lt;br /&gt;freq: 12&amp;rdquo;,&amp;ldquo;word: industrial&lt;br /&gt;freq: 11&amp;rdquo;,&amp;ldquo;word: installs&lt;br /&gt;freq: 10&amp;rdquo;,&amp;ldquo;word: maintains&lt;br /&gt;freq: 11&amp;rdquo;,&amp;ldquo;word: operates&lt;br /&gt;freq: 13&amp;rdquo;,&amp;ldquo;word: other&lt;br /&gt;freq: 20&amp;rdquo;,&amp;ldquo;word: performs&lt;br /&gt;freq: 10&amp;rdquo;,&amp;ldquo;word: plans&lt;br /&gt;freq: 11&amp;rdquo;,&amp;ldquo;word: prepares&lt;br /&gt;freq: 15&amp;rdquo;,&amp;ldquo;word: problems&lt;br /&gt;freq:  9&amp;rdquo;,&amp;ldquo;word: products&lt;br /&gt;freq: 10&amp;rdquo;,&amp;ldquo;word: repairs&lt;br /&gt;freq: 19&amp;rdquo;,&amp;ldquo;word: studies&lt;br /&gt;freq: 13&amp;rdquo;],&amp;ldquo;type&amp;rdquo;:&amp;ldquo;bar&amp;rdquo;,&amp;ldquo;marker&amp;rdquo;:{&amp;ldquo;autocolorscale&amp;rdquo;:false,&amp;ldquo;color&amp;rdquo;:&amp;ldquo;rgba(139,0,0,1)&amp;rdquo;,&amp;ldquo;line&amp;rdquo;:{&amp;ldquo;width&amp;rdquo;:1.88976377952756,&amp;ldquo;color&amp;rdquo;:&amp;ldquo;rgba(0,0,139,1)&amp;rdquo;}},&amp;ldquo;showlegend&amp;rdquo;:false,&amp;ldquo;xaxis&amp;rdquo;:&amp;ldquo;x&amp;rdquo;,&amp;ldquo;yaxis&amp;rdquo;:&amp;ldquo;y&amp;rdquo;,&amp;ldquo;hoverinfo&amp;rdquo;:&amp;ldquo;text&amp;rdquo;,&amp;ldquo;frame&amp;rdquo;:null}],&amp;ldquo;layout&amp;rdquo;:{&amp;ldquo;margin&amp;rdquo;:{&amp;ldquo;t&amp;rdquo;:43.7625570776256,&amp;ldquo;r&amp;rdquo;:7.30593607305936,&amp;ldquo;b&amp;rdquo;:62.8209878231037,&amp;ldquo;l&amp;rdquo;:37.2602739726027},&amp;ldquo;plot_bgcolor&amp;rdquo;:&amp;ldquo;rgba(235,235,235,1)&amp;rdquo;,&amp;ldquo;paper_bgcolor&amp;rdquo;:&amp;ldquo;rgba(255,255,255,1)&amp;rdquo;,&amp;ldquo;font&amp;rdquo;:{&amp;ldquo;color&amp;rdquo;:&amp;ldquo;rgba(0,0,0,1)&amp;rdquo;,&amp;ldquo;family&amp;rdquo;:&amp;ldquo;&amp;rdquo;,&amp;ldquo;size&amp;rdquo;:14.6118721461187},&amp;ldquo;title&amp;rdquo;:{&amp;ldquo;text&amp;rdquo;:&amp;ldquo;Frequency Histogram&amp;rdquo;,&amp;ldquo;font&amp;rdquo;:{&amp;ldquo;color&amp;rdquo;:&amp;ldquo;rgba(0,0,0,1)&amp;rdquo;,&amp;ldquo;family&amp;rdquo;:&amp;ldquo;&amp;rdquo;,&amp;ldquo;size&amp;rdquo;:17.5342465753425},&amp;ldquo;x&amp;rdquo;:0,&amp;ldquo;xref&amp;rdquo;:&amp;ldquo;paper&amp;rdquo;},&amp;ldquo;xaxis&amp;rdquo;:{&amp;ldquo;domain&amp;rdquo;:[0,1],&amp;ldquo;automargin&amp;rdquo;:true,&amp;ldquo;type&amp;rdquo;:&amp;ldquo;linear&amp;rdquo;,&amp;ldquo;autorange&amp;rdquo;:false,&amp;ldquo;range&amp;rdquo;:[0.4,20.6],&amp;ldquo;tickmode&amp;rdquo;:&amp;ldquo;array&amp;rdquo;,&amp;ldquo;ticktext&amp;rdquo;:[&amp;ldquo;according&amp;rdquo;,&amp;ldquo;assists&amp;rdquo;,&amp;ldquo;businesses&amp;rdquo;,&amp;ldquo;commercial&amp;rdquo;,&amp;ldquo;develops&amp;rdquo;,&amp;ldquo;diagnoses&amp;rdquo;,&amp;ldquo;equipment&amp;rdquo;,&amp;ldquo;individuals&amp;rdquo;,&amp;ldquo;industrial&amp;rdquo;,&amp;ldquo;installs&amp;rdquo;,&amp;ldquo;maintains&amp;rdquo;,&amp;ldquo;operates&amp;rdquo;,&amp;ldquo;other&amp;rdquo;,&amp;ldquo;performs&amp;rdquo;,&amp;ldquo;plans&amp;rdquo;,&amp;ldquo;prepares&amp;rdquo;,&amp;ldquo;problems&amp;rdquo;,&amp;ldquo;products&amp;rdquo;,&amp;ldquo;repairs&amp;rdquo;,&amp;ldquo;studies&amp;rdquo;],&amp;ldquo;tickvals&amp;rdquo;:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],&amp;ldquo;categoryorder&amp;rdquo;:&amp;ldquo;array&amp;rdquo;,&amp;ldquo;categoryarray&amp;rdquo;:[&amp;ldquo;according&amp;rdquo;,&amp;ldquo;assists&amp;rdquo;,&amp;ldquo;businesses&amp;rdquo;,&amp;ldquo;commercial&amp;rdquo;,&amp;ldquo;develops&amp;rdquo;,&amp;ldquo;diagnoses&amp;rdquo;,&amp;ldquo;equipment&amp;rdquo;,&amp;ldquo;individuals&amp;rdquo;,&amp;ldquo;industrial&amp;rdquo;,&amp;ldquo;installs&amp;rdquo;,&amp;ldquo;maintains&amp;rdquo;,&amp;ldquo;operates&amp;rdquo;,&amp;ldquo;other&amp;rdquo;,&amp;ldquo;performs&amp;rdquo;,&amp;ldquo;plans&amp;rdquo;,&amp;ldquo;prepares&amp;rdquo;,&amp;ldquo;problems&amp;rdquo;,&amp;ldquo;products&amp;rdquo;,&amp;ldquo;repairs&amp;rdquo;,&amp;ldquo;studies&amp;rdquo;],&amp;ldquo;nticks&amp;rdquo;:null,&amp;ldquo;ticks&amp;rdquo;:&amp;ldquo;outside&amp;rdquo;,&amp;ldquo;tickcolor&amp;rdquo;:&amp;ldquo;rgba(51,51,51,1)&amp;rdquo;,&amp;ldquo;ticklen&amp;rdquo;:3.65296803652968,&amp;ldquo;tickwidth&amp;rdquo;:0.66417600664176,&amp;ldquo;showticklabels&amp;rdquo;:true,&amp;ldquo;tickfont&amp;rdquo;:{&amp;ldquo;color&amp;rdquo;:&amp;ldquo;rgba(77,77,77,1)&amp;rdquo;,&amp;ldquo;family&amp;rdquo;:&amp;ldquo;&amp;rdquo;,&amp;ldquo;size&amp;rdquo;:11.689497716895},&amp;ldquo;tickangle&amp;rdquo;:-45,&amp;ldquo;showline&amp;rdquo;:false,&amp;ldquo;linecolor&amp;rdquo;:null,&amp;ldquo;linewidth&amp;rdquo;:0,&amp;ldquo;showgrid&amp;rdquo;:true,&amp;ldquo;gridcolor&amp;rdquo;:&amp;ldquo;rgba(255,255,255,1)&amp;rdquo;,&amp;ldquo;gridwidth&amp;rdquo;:0.66417600664176,&amp;ldquo;zeroline&amp;rdquo;:false,&amp;ldquo;anchor&amp;rdquo;:&amp;ldquo;y&amp;rdquo;,&amp;ldquo;title&amp;rdquo;:{&amp;ldquo;text&amp;rdquo;:&amp;ldquo;word&amp;rdquo;,&amp;ldquo;font&amp;rdquo;:{&amp;ldquo;color&amp;rdquo;:&amp;ldquo;rgba(0,0,0,1)&amp;rdquo;,&amp;ldquo;family&amp;rdquo;:&amp;ldquo;&amp;rdquo;,&amp;ldquo;size&amp;rdquo;:14.6118721461187}},&amp;ldquo;hoverformat&amp;rdquo;:&amp;ldquo;.2f&amp;rdquo;},&amp;ldquo;yaxis&amp;rdquo;:{&amp;ldquo;domain&amp;rdquo;:[0,1],&amp;ldquo;automargin&amp;rdquo;:true,&amp;ldquo;type&amp;rdquo;:&amp;ldquo;linear&amp;rdquo;,&amp;ldquo;autorange&amp;rdquo;:false,&amp;ldquo;range&amp;rdquo;:[-1,21],&amp;ldquo;tickmode&amp;rdquo;:&amp;ldquo;array&amp;rdquo;,&amp;ldquo;ticktext&amp;rdquo;:[&amp;ldquo;0&amp;rdquo;,&amp;ldquo;5&amp;rdquo;,&amp;ldquo;10&amp;rdquo;,&amp;ldquo;15&amp;rdquo;,&amp;ldquo;20&amp;rdquo;],&amp;ldquo;tickvals&amp;rdquo;:[0,5,10,15,20],&amp;ldquo;categoryorder&amp;rdquo;:&amp;ldquo;array&amp;rdquo;,&amp;ldquo;categoryarray&amp;rdquo;:[&amp;ldquo;0&amp;rdquo;,&amp;ldquo;5&amp;rdquo;,&amp;ldquo;10&amp;rdquo;,&amp;ldquo;15&amp;rdquo;,&amp;ldquo;20&amp;rdquo;],&amp;ldquo;nticks&amp;rdquo;:null,&amp;ldquo;ticks&amp;rdquo;:&amp;ldquo;outside&amp;rdquo;,&amp;ldquo;tickcolor&amp;rdquo;:&amp;ldquo;rgba(51,51,51,1)&amp;rdquo;,&amp;ldquo;ticklen&amp;rdquo;:3.65296803652968,&amp;ldquo;tickwidth&amp;rdquo;:0.66417600664176,&amp;ldquo;showticklabels&amp;rdquo;:true,&amp;ldquo;tickfont&amp;rdquo;:{&amp;ldquo;color&amp;rdquo;:&amp;ldquo;rgba(77,77,77,1)&amp;rdquo;,&amp;ldquo;family&amp;rdquo;:&amp;ldquo;&amp;rdquo;,&amp;ldquo;size&amp;rdquo;:11.689497716895},&amp;ldquo;tickangle&amp;rdquo;:-0,&amp;ldquo;showline&amp;rdquo;:false,&amp;ldquo;linecolor&amp;rdquo;:null,&amp;ldquo;linewidth&amp;rdquo;:0,&amp;ldquo;showgrid&amp;rdquo;:true,&amp;ldquo;gridcolor&amp;rdquo;:&amp;ldquo;rgba(255,255,255,1)&amp;rdquo;,&amp;ldquo;gridwidth&amp;rdquo;:0.66417600664176,&amp;ldquo;zeroline&amp;rdquo;:false,&amp;ldquo;anchor&amp;rdquo;:&amp;ldquo;x&amp;rdquo;,&amp;ldquo;title&amp;rdquo;:{&amp;ldquo;text&amp;rdquo;:&amp;ldquo;freq&amp;rdquo;,&amp;ldquo;font&amp;rdquo;:{&amp;ldquo;color&amp;rdquo;:&amp;ldquo;rgba(0,0,0,1)&amp;rdquo;,&amp;ldquo;family&amp;rdquo;:&amp;ldquo;&amp;rdquo;,&amp;ldquo;size&amp;rdquo;:14.6118721461187}},&amp;ldquo;hoverformat&amp;rdquo;:&amp;ldquo;.2f&amp;rdquo;},&amp;ldquo;shapes&amp;rdquo;:[{&amp;ldquo;type&amp;rdquo;:&amp;ldquo;rect&amp;rdquo;,&amp;ldquo;fillcolor&amp;rdquo;:null,&amp;ldquo;line&amp;rdquo;:{&amp;ldquo;color&amp;rdquo;:null,&amp;ldquo;width&amp;rdquo;:0,&amp;ldquo;linetype&amp;rdquo;:[]},&amp;ldquo;yref&amp;rdquo;:&amp;ldquo;paper&amp;rdquo;,&amp;ldquo;xref&amp;rdquo;:&amp;ldquo;paper&amp;rdquo;,&amp;ldquo;x0&amp;rdquo;:0,&amp;ldquo;x1&amp;rdquo;:1,&amp;ldquo;y0&amp;rdquo;:0,&amp;ldquo;y1&amp;rdquo;:1}],&amp;ldquo;showlegend&amp;rdquo;:false,&amp;ldquo;legend&amp;rdquo;:{&amp;ldquo;bgcolor&amp;rdquo;:&amp;ldquo;rgba(255,255,255,1)&amp;rdquo;,&amp;ldquo;bordercolor&amp;rdquo;:&amp;ldquo;transparent&amp;rdquo;,&amp;ldquo;borderwidth&amp;rdquo;:1.88976377952756,&amp;ldquo;font&amp;rdquo;:{&amp;ldquo;color&amp;rdquo;:&amp;ldquo;rgba(0,0,0,1)&amp;rdquo;,&amp;ldquo;family&amp;rdquo;:&amp;ldquo;&amp;rdquo;,&amp;ldquo;size&amp;rdquo;:11.689497716895}},&amp;ldquo;hovermode&amp;rdquo;:&amp;ldquo;closest&amp;rdquo;,&amp;ldquo;barmode&amp;rdquo;:&amp;ldquo;relative&amp;rdquo;},&amp;ldquo;config&amp;rdquo;:{&amp;ldquo;doubleClick&amp;rdquo;:&amp;ldquo;reset&amp;rdquo;,&amp;ldquo;showSendToCloud&amp;rdquo;:false},&amp;ldquo;source&amp;rdquo;:&amp;ldquo;A&amp;rdquo;,&amp;ldquo;attrs&amp;rdquo;:{&amp;ldquo;181fb4739be77&amp;rdquo;:{&amp;ldquo;x&amp;rdquo;:{},&amp;ldquo;y&amp;rdquo;:{},&amp;ldquo;type&amp;rdquo;:&amp;ldquo;bar&amp;rdquo;}},&amp;ldquo;cur_data&amp;rdquo;:&amp;ldquo;181fb4739be77&amp;rdquo;,&amp;ldquo;visdat&amp;rdquo;:{&amp;ldquo;181fb4739be77&amp;rdquo;:[&amp;ldquo;function (y) &amp;ldquo;,&amp;ldquo;x&amp;rdquo;]},&amp;ldquo;highlight&amp;rdquo;:{&amp;ldquo;on&amp;rdquo;:&amp;ldquo;plotly_click&amp;rdquo;,&amp;ldquo;persistent&amp;rdquo;:false,&amp;ldquo;dynamic&amp;rdquo;:false,&amp;ldquo;selectize&amp;rdquo;:false,&amp;ldquo;opacityDim&amp;rdquo;:0.2,&amp;ldquo;selected&amp;rdquo;:{&amp;ldquo;opacity&amp;rdquo;:1},&amp;ldquo;debounce&amp;rdquo;:0},&amp;ldquo;shinyEvents&amp;rdquo;:[&amp;ldquo;plotly_hover&amp;rdquo;,&amp;ldquo;plotly_click&amp;rdquo;,&amp;ldquo;plotly_selected&amp;rdquo;,&amp;ldquo;plotly_relayout&amp;rdquo;,&amp;ldquo;plotly_brushed&amp;rdquo;,&amp;ldquo;plotly_brushing&amp;rdquo;,&amp;ldquo;plotly_clickannotation&amp;rdquo;,&amp;ldquo;plotly_doubleclick&amp;rdquo;,&amp;ldquo;plotly_deselect&amp;rdquo;,&amp;ldquo;plotly_afterplot&amp;rdquo;],&amp;ldquo;base_url&amp;rdquo;:&amp;ldquo;&lt;a href=&#34;https://plot.ly&amp;quot;},&amp;quot;evals&amp;quot;:[],&amp;quot;jsHooks&amp;quot;:[]&#34; target=&#34;_blank&#34;&gt;https://plot.ly&amp;quot;},&amp;quot;evals&amp;quot;:[],&amp;quot;jsHooks&amp;quot;:[]&lt;/a&gt;}&lt;/script&gt;&lt;!--/html_preserve--&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;From homework: Examine the distributions of &lt;strong&gt;Stress_Category&lt;/strong&gt; and &lt;strong&gt;Hiring_Potential&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;From homework: Examine the distributions of &lt;strong&gt;Stress_Category&lt;/strong&gt; and &lt;strong&gt;Hiring_Potential&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;psych::describe(job_data$Hiring_Potential)
 &lt;/code&gt;&lt;/pre&gt;
@@ -898,7 +821,8 @@ ggplotly(h1)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;plot(job_data$Stress_Category, main = &amp;quot;Stress Category Frequency&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;/project/textAnalysisJobSatisfaction_DSPA4/index_files/figure-html/unnamed-chunk-17-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 
@@ -976,21 +900,22 @@ corpus_test &amp;lt;- corpus_clean[-subset_int]
 
 &lt;ul&gt;
 &lt;li&gt;Binarize the Job Stress into two categories (low/high stress levels)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a %in% b&lt;/code&gt; is an intuitive interface to match and acts as a binary operator returning a logical vector (T or F) indicating if there is a match between the left and right operands.&lt;/li&gt;
-&lt;/ul&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;a %in% b&lt;/code&gt; is an intuitive interface to match and acts as a binary operator returning a logical vector (T or F) indicating if there is a match between the left and right operands.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;plot(job_data_train$Stress_Category)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;/project/textAnalysisJobSatisfaction_DSPA4/index_files/figure-html/unnamed-chunk-23-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Binarize the Job Stress into two categories (low/high stress levels)&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Binarize the Job Stress into two categories (low/high stress levels)&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;job_data_train$stress_binary &amp;lt;- job_data_train$Stress_Category %in% c(3:5)
 job_data_train$stress_binary &amp;lt;- factor(job_data_train$stress_binary, levels=c(F, T), labels = c(&amp;quot;low_stress&amp;quot;, &amp;quot;high_stress&amp;quot;))
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;binarize-the-job-stress-for-testing&#34;&gt;Binarize the Job Stress for testing&lt;/h2&gt;
 
@@ -1000,12 +925,12 @@ job_data_train$stress_binary &amp;lt;- factor(job_data_train$stress_binary, leve
 &lt;p&gt;&lt;img src=&#34;/project/textAnalysisJobSatisfaction_DSPA4/index_files/figure-html/unnamed-chunk-25-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Binarize the Job Stress into two categories (low/high stress levels)&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Binarize the Job Stress into two categories (low/high stress levels)&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;job_data_test$stress_binary &amp;lt;- job_data_test$Stress_Category %in% c(3:5)
 job_data_test$stress_binary &amp;lt;- factor(job_data_test$stress_binary, levels=c(F, T), labels = c(&amp;quot;low_stress&amp;quot;, &amp;quot;high_stress&amp;quot;))
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;compare-the-proportions&#34;&gt;Compare the proportions&lt;/h2&gt;
 
@@ -1088,8 +1013,8 @@ freq_dtm_test &amp;lt;- sort(colSums(as.matrix(job_data_dtm_test)), decreasing=T
 
 &lt;ul&gt;
 &lt;li&gt;we are going to make frequencies of words into features.&lt;/li&gt;
-&lt;li&gt;we will create indicators for words that appear at least in 3 different documents in the training data.&lt;/li&gt;
-&lt;/ul&gt;
+
+&lt;li&gt;&lt;p&gt;we will create indicators for words that appear at least in 3 different documents in the training data.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;summary(findFreqTerms(job_data_dtm_train, 2)) 
 &lt;/code&gt;&lt;/pre&gt;
@@ -1101,16 +1026,14 @@ freq_dtm_test &amp;lt;- sort(colSums(as.matrix(job_data_dtm_test)), decreasing=T
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;job_data_dict &amp;lt;- as.character(findFreqTerms(job_data_dtm_train, 3))
 job_train &amp;lt;- DocumentTermMatrix(corpus_train, list(dictionary=job_data_dict))
 job_test &amp;lt;- DocumentTermMatrix(corpus_test, list(dictionary=job_data_dict))
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;The Naive Bayes classifier trains on data with categorical features, as it uses frequency tables for learning the data affinities. To create the combinations of class and feature values comprising the frequency-table (matrix), all feature must be categorical.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;The Naive Bayes classifier trains on data with categorical features, as it uses frequency tables for learning the data affinities. To create the combinations of class and feature values comprising the frequency-table (matrix), all feature must be categorical.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;convert_counts &amp;lt;- function(wordFreq) {
-  wordFreq &amp;lt;- ifelse(wordFreq &amp;gt; 0, 1, 0)
-  wordFreq &amp;lt;- factor(wordFreq, levels = c(0, 1), labels = c(&amp;quot;No&amp;quot;, &amp;quot;Yes&amp;quot;))
-  return(wordFreq)
+wordFreq &amp;lt;- ifelse(wordFreq &amp;gt; 0, 1, 0)
+wordFreq &amp;lt;- factor(wordFreq, levels = c(0, 1), labels = c(&amp;quot;No&amp;quot;, &amp;quot;Yes&amp;quot;))
+return(wordFreq)
 }
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -1128,13 +1051,13 @@ dim(job_train)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code&gt;## [1]  20 142
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&#34;report-sparsity&#34;&gt;Report sparsity&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;High sparsity of about 97%, indicating mostly &amp;ldquo;No&amp;rdquo; values.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;High sparsity of about 97%, indicating mostly &amp;ldquo;No&amp;rdquo; values.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;prop.table(table(job_train))
 &lt;/code&gt;&lt;/pre&gt;
@@ -1150,19 +1073,20 @@ dim(job_train)
 &lt;pre&gt;&lt;code&gt;## job_test
 ##         No        Yes 
 ## 0.97535211 0.02464789
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&#34;analyctics&#34;&gt;Analyctics&lt;/h1&gt;
 
 &lt;h2 id=&#34;naive-bayes&#34;&gt;Naive Bayes&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Apply the Naive Bayes classifier on the high frequency terms to predict stress level (low/high).&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Apply the Naive Bayes classifier on the high frequency terms to predict stress level (low/high).&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# install.packages(&amp;quot;e1071&amp;quot;, repos = &amp;quot;http://cran.us.r-project.org&amp;quot;)
 library(e1071)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&#34;build-classifier&#34;&gt;Build classifier&lt;/h3&gt;
 
@@ -1175,8 +1099,7 @@ library(e1071)
 &lt;h3 id=&#34;evaluate-model-performance&#34;&gt;Evaluate model performance&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Accuracy is 80%.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Accuracy is 80%.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(gmodels)
 &lt;/code&gt;&lt;/pre&gt;
@@ -1219,18 +1142,17 @@ library(e1071)
 ## --------------|-------------|-------------|-------------|
 ## 
 ## 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Accuracy of Naive Bayes&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Accuracy of Naive Bayes&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;acc_NB1 &amp;lt;- (table_NB1$t[1,1]+table_NB1$t[2,2])/dim(job_data_test)[1]
 print(acc_NB1)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code&gt;## [1] 0.8
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;lda-prediction&#34;&gt;LDA Prediction&lt;/h2&gt;
 
@@ -1287,8 +1209,7 @@ hn_pred = predict(job_lda, df_job_test)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Accuracy of LDA&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Accuracy of LDA&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# accuracy of LDA
 acc_LDA1 &amp;lt;- (table_LDA1$t[1,1]+table_LDA1$t[2,2])/dim(job_data_test)[1]
@@ -1296,11 +1217,9 @@ print(acc_LDA1)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code&gt;## [1] 0.75
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Error of LDA&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Error of LDA&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# error of LDA
 error_LDA1 &amp;lt;- (table_LDA1$t[1,2]+table_LDA1$t[2,1])/dim(job_data_test)[1]
@@ -1308,11 +1227,9 @@ print(error_LDA1)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code&gt;## [1] 0.25
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Specificity: TN/(TN+FP)&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Specificity: TN/(TN+FP)&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# specifity of LDA
 specificity_LDA1 &amp;lt;- (table_LDA1$t[1,1]/(table_LDA1$t[1,1] + table_LDA1$t[2,1]))
@@ -1320,18 +1237,17 @@ specificity_LDA1
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code&gt;## [1] 0.8235294
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Sensitivity: TP/(TP+FN)&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Sensitivity: TP/(TP+FN)&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;sensitivity_LDA1 &amp;lt;- (table_LDA1$t[2,1]/(table_LDA1$t[2,1] + table_LDA1$t[2,2]))
 sensitivity_LDA1
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code&gt;## [1] 0.75
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;decision-tree&#34;&gt;Decision Tree&lt;/h2&gt;
 
@@ -1432,8 +1348,7 @@ job_model
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Accuracy is 1&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Accuracy is 1&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;job_pred&amp;lt;-predict(job_model, job_data_test[,-c(1,5,6,9)])
 library(caret)
@@ -1477,13 +1392,13 @@ library(caret)
 ##                                      
 ##        &#39;Positive&#39; Class : low_stress 
 ## 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;multivariate-linear-model&#34;&gt;Multivariate Linear Model&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;To predict Overall job ranking (smaller is better). Generate some informative pairs plots. Use backward step-wise feature selection to simplify the model, report the AIC.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;To predict Overall job ranking (smaller is better). Generate some informative pairs plots. Use backward step-wise feature selection to simplify the model, report the AIC.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;colnames(job_data)
 &lt;/code&gt;&lt;/pre&gt;
@@ -1527,13 +1442,13 @@ summary(fit)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;plot(fit, which = 1:2)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;/project/textAnalysisJobSatisfaction_DSPA4/index_files/figure-html/unnamed-chunk-58-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;/project/textAnalysisJobSatisfaction_DSPA4/index_files/figure-html/unnamed-chunk-58-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;AIC=1613.73&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;AIC=1613.73&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;step(fit,direction = &amp;quot;backward&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
@@ -1567,7 +1482,8 @@ summary(fit)
 ##               -7.6480               -71.1279              -317.2594  
 ##       Physical_Demand       Hiring_Potential  
 ##                5.9454                -5.9251
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -1584,16 +1500,6 @@ summary(fit)
 &lt;p&gt;Introduction to Social Psychology (PSYCH 280) with Dr. Allison Earl&lt;br /&gt;
 University of Michigan, Ann Arbor, MI&lt;br /&gt;
 Fall 2018&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Privacy Policy</title>
-      <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      
-      <guid>/privacy/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
@@ -1661,223 +1567,6 @@ University of Michigan, Ann Arbor, MI&lt;/p&gt;
 &lt;h3 id=&#34;mentor-for-undergraduate-research-opportunities-program&#34;&gt;&lt;em&gt;Mentor for Undergraduate Research Opportunities Program&lt;/em&gt;&lt;/h3&gt;
 
 &lt;h3 id=&#34;mentor-for-michigan-association-of-psychology-scholars&#34;&gt;&lt;em&gt;Mentor for Michigan Association of Psychology Scholars&lt;/em&gt;&lt;/h3&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Academic: the website builder for Hugo</title>
-      <link>/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/post/getting-started/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em&gt;widgets&lt;/em&gt;, &lt;em&gt;themes&lt;/em&gt;, and &lt;em&gt;language packs&lt;/em&gt; included!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href=&#34;https://sourcethemes.com/academic/#expo&#34; target=&#34;_blank&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#install&#34;&gt;&lt;strong&gt;Setup Academic&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Get Started&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;View the documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://discuss.gohugo.io/&#34; target=&#34;_blank&#34;&gt;Ask a question&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34;&gt;Request a feature or report a bug&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Updating? View the &lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Support development of Academic:
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://paypal.me/cushen&#34; target=&#34;_blank&#34;&gt;Donate a coffee&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.patreon.com/cushen&#34; target=&#34;_blank&#34;&gt;Become a backer on Patreon&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academic&#34; target=&#34;_blank&#34;&gt;Decorate your laptop or journal with an Academic sticker&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://academic.threadless.com/&#34; target=&#34;_blank&#34;&gt;Wear the T-shirt&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;Screenshot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Key features:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with &lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://sourcethemes.com/academic/docs/jupyter/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 15+ language packs including English, 中文, and Português&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;color-themes&#34;&gt;Color Themes&lt;/h2&gt;
-
-&lt;p&gt;Academic comes with &lt;strong&gt;day (light) and night (dark) mode&lt;/strong&gt; built-in. Click the sun/moon icon in the top right of the &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt; to see it in action!&lt;/p&gt;
-
-&lt;p&gt;Choose a stunning color and font theme for your site. Themes are fully customizable and include:&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-&lt;div class=&#34;gallery&#34;&gt;
-
-  
-  
-  
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-1950s.png&#34; data-caption=&#34;1950s&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-1950s_huaf5482f8cea0c5a703a328640e3b7509_21614_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-apogee.png&#34; data-caption=&#34;Apogee&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-apogee_hu4b45d99db97150df01464c393bfd17d4_24119_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-coffee-playfair.png&#34; data-caption=&#34;Coffee theme with Playfair font&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-coffee-playfair_hu446a8f670cc5622adcc77b97ba95f6c5_22462_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-dark.png&#34; data-caption=&#34;Dark&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-dark_hu1e8601ecc47f58eada7743fdcd709d3d_21456_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-default.png&#34; data-caption=&#34;Default&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-default_huba6228b7bdf30e2f03f12ea91b2cba0d_21751_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-forest.png&#34; data-caption=&#34;Forest&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-forest_hu4f093a1c683134431456584193ea41ee_21797_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-ocean.png&#34; data-caption=&#34;Ocean&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-ocean_hu14831ccafc2219f30a7a096fa7617e01_21760_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-strawberry.png&#34; data-caption=&#34;Strawberry&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-strawberry_hu36b0b347fcca08bd39e2df22dcedbdfb_39532_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-
-  
-&lt;/div&gt;
-
-&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-admin&#34; target=&#34;_blank&#34;&gt;Academic Admin&lt;/a&gt;:&lt;/strong&gt; An admin tool to import publications from BibTeX or import assets for an offline site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-scripts&#34; target=&#34;_blank&#34;&gt;Academic Scripts&lt;/a&gt;:&lt;/strong&gt; Scripts to help migrate content to new versions of Academic&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-
-&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-web-browser&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;one-click install using your web browser (recommended)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-git&#34; target=&#34;_blank&#34;&gt;install on your computer using &lt;strong&gt;Git&lt;/strong&gt; with the Command Prompt/Terminal app&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-zip&#34; target=&#34;_blank&#34;&gt;install on your computer by downloading the &lt;strong&gt;ZIP files&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;install on your computer with &lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Then &lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34;&gt;personalize and deploy your new site&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;View the Update Guide&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on &lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; to help keep track of &lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34;&gt;updates&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-
-&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
 </description>
     </item>
     

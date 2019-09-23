@@ -1,14 +1,14 @@
 ---
-title: "Is job satisfaction in the description?"	
+title: "Is job satisfaction in the description?"
 subtitle: "Analyzing job description text data to infer job satisfaction and stress"
 summary: "Analyzing job description text data to infer job satisfaction and stress"
 date: 2018-10-01
-author: "<h3>Susannah</h3>"	
+author: "<h3>Susannah</h3>"
 output:
   html_document:
     keep_md: true
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
   # Caption (optional)
   caption: ""
@@ -28,22 +28,22 @@ This is a homework assignment I completed for a graduate course in [Data Science
 
 Construct an R protocol to examine the job-stress level (**Stress_Level**) and hiring-potential (**Hiring_Potential**) using the job description (JD) (**Description**) text.
 
-# Set-Up Workspace 
+# Set-Up Workspace
 
-## Dataset Description 
-- The data we are using for homework 4 is the [SOCR Dataset Ranking the Best and Worst USA Jobs for 2011](http://wiki.socr.umich.edu/index.php/SOCR_Data_2011_US_JobsRanking#2011_Ranking_of_the_200_most_common_Jobs_in_the_US). 
+## Dataset Description
+- The data we are using for homework 4 is the [SOCR Dataset Ranking the Best and Worst USA Jobs for 2011](http://wiki.socr.umich.edu/index.php/SOCR_Data_2011_US_JobsRanking#2011_Ranking_of_the_200_most_common_Jobs_in_the_US).
 - The variables in this data are
     - **Index**: Ranks of the 200 most common jobs based on the Overall_Score variable (lower rank/index indicates better job, and higher rank indicates a less desirable job for 2011). Overall Rank Index represents the sum of the rankings in each of the five variable (below) where each of the variables are assumed (but this may not necessarily be true) to be equally important.
-    - **Job Title**: title of the profession 
+    - **Job Title**: title of the profession
     - **Overall_Score**: A *Dependent variable* corresponding to the linearly predicted overall rank of this job using the remaining explanatory variables (below).
     - **Average_Income** (USD): An estimate of the mid-levels income for this profession.
     - **Work_Environment**: Work environment for each job reflects 2 basic factors: physical and emotional components. Points are assigned for potential for adverse working conditions (larger scores). In other words, fewer work-environment points would yield a lower (better) job rank and higher points reflect lower quality environments.
-    - **Stress_Level**: Expected level of job-related stress dependent on 11 potential stress factors. A high stress score implies that stress is a major part of the job, and lower stress score indicates lower job-relates stress. 
+    - **Stress_Level**: Expected level of job-related stress dependent on 11 potential stress factors. A high stress score implies that stress is a major part of the job, and lower stress score indicates lower job-relates stress.
     - **Stress_Category**: Categorical data where lower number seems to correspond to less stress while higher number is higher stress
     - **Physical_Demand**: The total physical demand if a job. Higher number means more physically demanding.
-    - **Hiring_Potential**: The hiring-potential rank assigns higher scores to jobs with promising future outlook and lower scores for less future potential. 
+    - **Hiring_Potential**: The hiring-potential rank assigns higher scores to jobs with promising future outlook and lower scores for less future potential.
     - **Description**: A brief job description for each profession.
-    
+
 ## Download the data
 ```{r message=FALSE}
 # install.packages('rvest')
@@ -64,7 +64,7 @@ datatable(job_data, options = list(
 ))
 ```
 
-- We have 200 observations (200 jobs) and 10 variables (information about the jobs). 
+- We have 200 observations (200 jobs) and 10 variables (information about the jobs).
 ```{r}
 str(job_data)
 ```
@@ -82,7 +82,7 @@ job_data$Index <- NULL
 job_data$Stress_Category <- factor(job_data$Stress_Category)
 ```
 
-- Remove some of the unneccessary *punction,* *contractions,* and *conjunctions* from the job description variable using `gsub` 
+- Remove some of the unneccessary *punction,* *contractions,* and *conjunctions* from the job description variable using `gsub`
 ```{r}
 # remove the underscores in the job descriptions using the gsub() function
 job_data$Description <- gsub("_", " ", job_data$Description)
@@ -108,9 +108,9 @@ library(tm)
 ```
 
 - First step for text mining is to convert text features (text elements) into a corpus object, which is a collection of text documents.
-- From homework: *Convert the textual JD meta-data into a corpus object.* 
+- From homework: *Convert the textual JD meta-data into a corpus object.*
 ```{r}
-job_data_corpus <- Corpus(VectorSource(job_data$Description))  
+job_data_corpus <- Corpus(VectorSource(job_data$Description))
 ## VectorSource() interprets each element of the vector x as a document
 ## A Corpus is unique because Corpus objects store text alongside metadata, like author, datetimestamp, id, language, etc.
 
@@ -123,13 +123,13 @@ inspect(job_data_corpus[1:3])
 ```
 
 - Use `tm_map()` function for cleaning the corpus document.
-- From homework: *Triage some of the irrelevant punctuation and other symbols in the corpus document, change all text to lower case, etc.* 
+- From homework: *Triage some of the irrelevant punctuation and other symbols in the corpus document, change all text to lower case, etc.*
 ```{r message=FALSE, warning=FALSE}
 corpus_clean <- tm_map(job_data_corpus, tolower)  ## changed all the characters to lower case
 
 corpus_clean <- tm_map(corpus_clean, removePunctuation) ## removed all punctuations
 
-corpus_clean <- tm_map(corpus_clean, removeNumbers) ## remove all numbers 
+corpus_clean <- tm_map(corpus_clean, removeNumbers) ## remove all numbers
 
 corpus_clean <- tm_map(corpus_clean, stripWhitespace) ## remove all extra white spaces  (typically created by deleting punctuations)
 ```
@@ -186,7 +186,7 @@ q <- ggplot(job_data, aes(x=Hiring_Potential)) +
 ggplotly(q)
 
 p <- ggplot(data=job_data, aes(x=Stress_Category, y = Hiring_Potential)) +
-    geom_bar(stat="identity") + ggtitle("Hiring Potential by Stress Category") 
+    geom_bar(stat="identity") + ggtitle("Hiring Potential by Stress Category")
 
 ggplotly(p)
 ```
@@ -206,7 +206,7 @@ ggplotly(g)
 ```
 
 
-# Split the data 90:10 training:testing 
+# Split the data 90:10 training:testing
 ```{r}
 set.seed(12345)
 subset_int <- sample(nrow(job_data),floor(nrow(job_data)*0.9))  # 90% training + 10% testing
@@ -277,20 +277,20 @@ library(wesanderson)
 ```{r}
 pal <- rainbow(10)
 library(wordcloud)
-wordcloud(corpus_train, max.words =100, min.freq=10, scale=c(4,.5), 
+wordcloud(corpus_train, max.words =100, min.freq=10, scale=c(4,.5),
            random.order = FALSE, rot.per=.5, vfont=c("sans serif","plain"), colors=pal)
 ```
 
 ## Visualize differences between low and high stress categories
 ```{r message=FALSE, warning=FALSE}
 low_stress<-subset(job_data_train, stress_binary=="low_stress")
-wordcloud(low_stress$Description, max.words = 20, min.freq=5, scale=c(4,.5), 
+wordcloud(low_stress$Description, max.words = 20, min.freq=5, scale=c(4,.5),
            random.order = FALSE, rot.per=.2, vfont=c("sans serif","plain"), colors=pal)
 ```
 
 ```{r message=FALSE, warning=FALSE}
 high_stress<-subset(job_data_train, stress_binary=="high_stress")
-wordcloud(high_stress$Description, max.words = 20, min.freq=2, scale=c(4,.5), 
+wordcloud(high_stress$Description, max.words = 20, min.freq=2, scale=c(4,.5),
            random.order = FALSE, rot.per=.2, vfont=c("sans serif","plain"), colors=pal)
 ```
 
@@ -302,14 +302,14 @@ freq_dtm_test <- sort(colSums(as.matrix(job_data_dtm_test)), decreasing=TRUE)
 
 ```{r}
 ggplot(job_data_train, aes(x=Hiring_Potential)) +
-    geom_density(binwidth=.5, fill="white") + ggtitle("Hiring Potential Frequency")+ facet_wrap(~stress_binary) 
+    geom_density(binwidth=.5, fill="white") + ggtitle("Hiring Potential Frequency")+ facet_wrap(~stress_binary)
 ```
 
 # Word count into categorical data
 - we are going to make frequencies of words into features.
 - we will create indicators for words that appear at least in 3 different documents in the training data.
 ```{r}
-summary(findFreqTerms(job_data_dtm_train, 2)) 
+summary(findFreqTerms(job_data_dtm_train, 2))
 ```
 
 
@@ -332,19 +332,19 @@ convert_counts <- function(wordFreq) {
 job_train <- apply(job_train, MARGIN = 2, convert_counts)
 job_test <- apply(job_test, MARGIN = 2, convert_counts)
 
-# Check the structure of the data 
+# Check the structure of the data
 dim(job_train)
 dim(job_test)
 ```
 
-# Report sparsity 
-- High sparsity of about 97%, indicating mostly "No" values. 
+# Report sparsity
+- High sparsity of about 97%, indicating mostly "No" values.
 ```{r}
 prop.table(table(job_train))
 prop.table(table(job_test))
 ```
 
-# Analyctics 
+# Analyctics
 ## Naive Bayes
 - Apply the Naive Bayes classifier on the high frequency terms to predict stress level (low/high).
 ```{r message=FALSE, warning=FALSE}
@@ -352,7 +352,7 @@ prop.table(table(job_test))
 library(e1071)
 ```
 
-### Build classifier 
+### Build classifier
 ```{r}
 job_classifier <- naiveBayes(job_train, job_data_train$stress_binary)
 ```
@@ -362,7 +362,7 @@ job_test_pred<-predict(job_classifier, job_test)
 ```
 
 ### Evaluate model performance
-- Accuracy is 80%. 
+- Accuracy is 80%.
 ```{r message=FALSE, warning=FALSE}
 library(gmodels)
 ```
@@ -372,13 +372,13 @@ library(gmodels)
 table_NB1 <- CrossTable(job_test_pred, job_data_test$stress_binary)
 ```
 
-- Accuracy of Naive Bayes 
+- Accuracy of Naive Bayes
 ```{r}
 acc_NB1 <- (table_NB1$t[1,1]+table_NB1$t[2,2])/dim(job_data_test)[1]
 print(acc_NB1)
 ```
 
-## LDA Prediction 
+## LDA Prediction
 ```{r message=FALSE, warning=FALSE}
 library(MASS)
 ```
@@ -452,7 +452,7 @@ library(caret)
 confusionMatrix(table(job_pred, job_data_test$stress_binary))
 ```
 
-## Multivariate Linear Model 
+## Multivariate Linear Model
 - To predict Overall job ranking (smaller is better). Generate some informative pairs plots. Use backward step-wise feature selection to simplify the model, report the AIC.
 ```{r}
 colnames(job_data)
